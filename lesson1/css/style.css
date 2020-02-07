@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/* base */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #666666;
+  background: url(../images/bg.jpg) center top repeat-x;
+  font-size: 1.6rem;
+}
+header, .global-nav, .breadcrumb, .contents, footer {
+  margin: 0 auto;
+  width: 860px;
+}
+a {
+  color: #f00;
+}
+.logo {
+  margin: 20px 0 25px;
+  text-align: center;
+}
+.global-nav ul {
+  background: #fb484e;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 4px;
+}
+.global-nav ul li {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  width: 210px;
+}
+.global-nav ul li a {
+  color: #6f4c39;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.global-nav ul li:hover {
+  background-color: #bcbcbc;
+}
+.nav_about  {
+  background-color: #89dce8;
+}
+.nav_guide {
+  background-color: #d7ed8b;
+}
+.nav_animals {
+  background-color: #ffe279;
+}
+.nav_contact {
+  background-color: #ffa674;
+}
+.breadcrumb ol {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+.breadcrumb li:not(:last-child)::after {
+  content: url(../images/path_arrow.png);
+  margin: 0 16px;
+  text-align: center;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  background: #fff;
+  padding: 10px 20px 10px;
+  width: 550px;
+}
+.sub {
+  width: 240px;
+}
+.bnr_area:first-child {
+  margin: 0 0 30px;
+}
+.bnr_area a:first-child{
+  text-decoration: none;
+}
+main h1 {
+  background-image: url(../images/bg_h1_left.png), url(../images/bg_h1_bottom.gif);
+  background-repeat: no-repeat, repeat-x;
+  background-position: right top, left bottom;
+  font-size: 2.2rem;
+  padding: 0 0 10px;
+  text-indent: 2rem;
+
+}
+.pagetop {
+  text-align: right;
+}
+.pagetop a {
+  position: relative;
+}
+.pagetop a::before {
+  content: url(../images/bg_arrow.png);
+  position: absolute;
+  right: 150px;
+  top: 0;
+}
+footer address {
+  background-image: url(../images/bg_footer.png);
+  background-repeat: repeat-x;
+  color: #fff;
+  font-size:1.4rem;
+  text-align: center;
+  padding: 10px 40px;
+}
+address {
+  font-style: normal;
+}
+.copyright {
+  margin: 0;
+  text-align: center;
+}
+footer {
+  margin-bottom: 30px;
+}
+/* index トップページ*/
+main h2 {
+  background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
+  background-repeat: no-repeat, repeat-x;
+  background-position: right top, left bottom;
+  color: #fff;
+  padding: 13px;
+}
+.top_info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.top_info li {
+  border-bottom: 1px dashed #ff0009;
+  display: flex;
+  padding: 20px 20px 20px 0;
+  line-height: center;
+}
+main ul time {
+  display: block;
+  width: 160px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.article-title {
+  display: block;
+  width: 390px;
+}
+.graphic {
+  margin: 0 auto;
+  width: 860px;
+}
+
+.graphic li {
+  display: none;
+}
+
+.graphic li.now {
+  display: block;
+}
+/* about 動物園について */
+.about_area p {
+  display: block;
+  margin-bottom: 30px;
+}
+.about_area img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+/* guide　　ガイドについて */
+.guide_table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 560px;
+}
+.guide_table caption {
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.guide_table span {
+  font-weight: bold;
+}
+.time_slot {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.guide_table th,
+.guide_table td {
+  padding: 10px;
+}
+.guide_table thead {
+  background-color: #ffdd62;
+}
+.guide_table tbody tr:nth-child(even) {
+  background-color: #eef8fa
+}
+/* animals 動物たち */
+main p {
+  margin: 30px 0 30px 0;
+}
+.animal_area {
+  display: flex;
+}
+.animal_area figure {
+  display: flex;
+  margin: 0 20px 20px 0;
+  width: 265px;
+}
+.animal_area figure:nth-child(even) {
+  width: 265px;
+}
+.animal_area figcaption {
+  margin: 0 0 0 20px;
+  width: 165px;
+}
+/* contact　　お問い合わせ */
+
+.contact {
+  margin-bottom: 30px;
+}
+.contact_table table {
+  border-collapse: collapse;
+  text-align: left;
+  text-indent: 1rem;
+  width: 100%;
+}
+.contact_table th,
+.contact_table td {
+  padding: 10px;
+}
+input[type=text] {
+  width: 200px;
+}
+input[type=email] {
+  width: 300px;
+}
+.contact_table textarea {
+  width: 92%;
+}
+/* .contact_table textarea {
+  margin: 14px 5px 0 3px;
+  width: 90%;
+} */
+
+
+/* .contact_table th,
+.contact_table td{
+  display: block;
+  text-align: left;
+  width: 100%;
+} */
