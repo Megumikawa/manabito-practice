@@ -72,6 +72,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.graphic ul {
+  padding: 0;
+}
 
 main {
   background: #fff;
