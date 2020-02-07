@@ -73,6 +73,7 @@ a {
   justify-content: space-between;
 }
 .graphic ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -162,13 +163,6 @@ main ul time {
   width: 860px;
 }
 
-.graphic li {
-  display: none;
-}
-
-.graphic li.now {
-  display: block;
-}
 /* about 動物園について */
 .about_area p {
   display: block;

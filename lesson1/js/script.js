@@ -1,0 +1,3 @@
+$(function(){
+  $('#graphic ul').bxSlider();
+});
