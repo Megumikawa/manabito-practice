@@ -6,43 +6,52 @@ html {
 body {
   font-size: 1.6rem;
 }
+body, header, div, ul, ol, main, footer {
+  margin: 0 auto;
+  padding: 0;
+}
 /* -----------------
 _______base_________
 ------------------- */
 
 header, .breadcrumb, .container, footer {
   margin: 0 auto;
-  width: 860px;
+  width: 830px;
 }
 a {
   color: #000;
 }
-
 .logo {
-  margin: 20px 0 20px;
+  margin-bottom: 20px;
+}
+.global_nav {
+  margin-bottom: 15px;
 }
 .global_nav ul {
-  padding-left: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding-left: 0;
 }
 .global_nav ul li {
   border: 5px solid #cecece;
   border-radius: 5px;
-  line-height: 65px;
-  text-align: center;
   font-size: 2rem;
   height: 65px;
-  width: 200px;
+  line-height: 65px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 185px;
 }
-
 .global_nav a {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
 }
 .global_nav a:hover {
   background-color: #dfdede;
+}
+.breadcrumb {
+  margin-bottom: 15px;
 }
 .breadcrumb ol {
   display: flex;
@@ -58,26 +67,25 @@ a {
 }
 .container {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 main {
-  width: 600px;
+  width: 610px;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
   background-repeat: no-repeat;
   background-position: left bottom, left top;
   color: #fff;
-  text-align: center;
-  line-height: 77px;
-  margin: 0 0 30px 0;
-
   font-size: 3rem;
   height: 78px;
+  line-height: 77px;
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 .sub {
   text-align: center;
-  width: 260px;
+  width: 220px;
 }
 .bnr_facility a{
   text-decoration: none;
@@ -91,24 +99,25 @@ h1 {
   position: absolute;
   right: 148px;
   top: 0;
-
 }
 .pagetop {
+  margin-bottom: 10px;
   text-align: right;
 }
 .footer_info {
-  clear: both;
   background-image: url(../images/back_footer.png);
   background-repeat: repeat-x;
+  clear: both;
   color: #fff;
   font-size: 1.7rem;
   text-align: center;
-  height: 60px;
-  padding: 10px;
+  height: 65px;
 }
 address {
   font-style: normal;
+  padding-top: 15px;
+
 }
 small {
-  margin: 0;
+  padding-top: 0;
 }
