@@ -14,7 +14,7 @@ body, header, div, ul, ol, main, footer {
 _______base_________
 ------------------- */
 
-header, .breadcrumb, .container, footer {
+header, .breadcrumb, .slider, .container, footer {
   margin: 0 auto;
   width: 830px;
 }
@@ -48,7 +48,7 @@ a {
   text-decoration: none;
 }
 .global_nav a:hover {
-  background-color: #dfdede;
+  background: radial-gradient(#afd6ee, #37a0e1);
 }
 .breadcrumb {
   margin-bottom: 15px;
@@ -70,7 +70,7 @@ a {
   margin-bottom: 35px;
 }
 main {
-  width: 610px;
+  width: 570px;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
@@ -120,4 +120,29 @@ address {
 }
 small {
   padding-top: 0;
+}
+/* ----------------
+---------index------ */
+.topics h2 {
+  background-image: url(../images/back_h2_left.png), url(../images/back_h2_bottom.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, left bottom;
+  font-size: 2.1rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0 10px 10px 10px;
+}
+.topics ul {
+  list-style-type: none;
+}
+.topics ul li {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted #afafaf;
+  color: #777;
+}
+.topics ul li time {
+  color: #138edb;
+  font-weight: bold;
+  padding-right: 40px;
 }

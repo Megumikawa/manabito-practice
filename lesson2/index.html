@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>ソライロ病院</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <header class="top">
-    <div class="logo"><a href="index_html"><img src="images/logo.png" alt="ソライロ病院" width="266" height="52"></a></div>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="ソライロ病院" width="266" height="52"></a></div>
     <nav class="global_nav">
       <ul>
         <li><a href="about.html">当病院について</a></li>
@@ -18,30 +21,40 @@
       </ul>
     </nav>
   </header>
-  <div class="breadcrumb">
-    <ol>
-      <li><a href="#">ホーム</a></li>
-      <li>当病院について</li>
-    </ol>
-  </div>
-  <div class="container">
-    <main>
-      <h1>当病院について</h1>
-    </main>
-    <div class="sub">
-      <div class="bnr_facility">
-        <a href="facility.html"><img src="images/banner_facility.png" alt="医療施設のご紹介" width="220" height="160"><br>
-        充実した医療施設のご紹介</a>
+  <div id="slider" class="slider">
+    <ul>
+      <li><img src="images/visual_image1.jpg" alt="一人ひとりに向き合った医療を" width="830" height="355"></li>
+      <li><img src="images/visual_image2.jpg" alt="ソライロ病院の人間ドック" width="830" height="355"></li>
+      <li><img src="images/visual_image3.jpg" alt="看護師募集中" width="830" height="355"></li>
+    </ul>
+    </div>
+    <div class="container">
+      <main>
+        <div class="topics">
+          <h2>トピックス</h2>
+          <ul>
+            <li><time datetime="2015-06-12">2015年06月12日</time>セカンドオピニオン外来を開始いたします。</li>
+            <li><time datetime="2015-05-23">2015年05月23日</time>6月より最新MRI検査機が2台に増えます。</li>
+            <li><time datetime="2015-05-01">2015年05月01日</time>平成27年度10月採用予定の看護師を募集します。</li>
+            <li><time datetime="2015-04-20">2015年04月20日</time>当院が緊急時避難ビルに指定されました。</li>
+          </ul>
+        </div>
+
+      </main>
+      <div class="sub">
+        <div class="bnr_facility">
+          <a href="facility.html"><img src="images/banner_facility.png" alt="医療施設のご紹介" width="220" height="160"><br>
+          充実した医療施設のご紹介</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p class="pagetop"><a href="#">ページの先頭へ戻る</a></p>
-    <div class="footer_info">
-      <address>東京都八王子市XXX-X　電話 代表：042-XXX-XXXX　外来受付：042-XXX-XXXX</address>
-      <small>Copyright 2015 SORAIRO HOSPITAL ALL right served.</small>
-    </div>
-  </footer>
+    <footer>
+      <p id="pagetop" class="pagetop"><a href="#">ページの先頭へ戻る</a></p>
+      <div class="footer_info">
+        <address>東京都八王子市XXX-X　電話 代表：042-XXX-XXXX　外来受付：042-XXX-XXXX</address>
+        <small>Copyright 2015 SORAIRO HOSPITAL ALL right served.</small>
+      </div>
+    </footer>
 </body>
 </html>
