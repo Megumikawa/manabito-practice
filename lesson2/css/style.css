@@ -5,6 +5,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  color: #666;
 }
 body, header, div, ul, ol, main, footer {
   margin: 0 auto;
@@ -71,6 +72,7 @@ a {
 }
 main {
   width: 570px;
+  margin: 0;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
@@ -123,14 +125,15 @@ small {
 }
 /* ----------------
 ---------index------ */
-.topics h2 {
+h2 {
   background-image: url(../images/back_h2_left.png), url(../images/back_h2_bottom.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left top, left bottom;
   font-size: 2.1rem;
   margin-top: 0;
   margin-bottom: 20px;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 15px;
+  color: #000;
 }
 .topics ul {
   list-style-type: none;
@@ -145,4 +148,18 @@ small {
   color: #138edb;
   font-weight: bold;
   padding-right: 40px;
+}
+/* ---------------
+------about------- */
+.photo_left {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.photo_right {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+.h2_group p {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
