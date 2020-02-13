@@ -165,3 +165,39 @@ h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
+/* ----------------
+-----guide--------- */
+table caption {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.table_guide {
+  font-weight: bold;
+}
+table {
+  font-size: 1.5rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  background-color: #f3be30;
+  color: #333;
+  padding: 5px;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody td:first-child {
+  font-weight: bold;
+  height:45px;
+  text-align: center;
+  width: 30%;
+}
+tbody td:nth-child(2) {
+  padding: 5px;
+  width: 45%;
+}
+tbody td:last-child {
+  padding: 5px;
+  text-align: right;
+}
