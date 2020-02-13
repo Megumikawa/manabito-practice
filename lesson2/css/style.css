@@ -4,7 +4,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #666;
 }
 body, header, div, ul, ol, main, footer {
@@ -144,7 +144,6 @@ h2 {
   margin-top: 20px;
   padding-bottom: 20px;
   border-bottom: 2px dotted #afafaf;
-  color: #777;
 }
 .topics ul li time {
   color: #138edb;
@@ -163,7 +162,6 @@ h2 {
 }
 .h2_group p {
   margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 /* ----------------
 -----guide--------- */
@@ -175,7 +173,6 @@ table caption {
   font-weight: bold;
 }
 table {
-  font-size: 1.5rem;
   border-collapse: collapse;
   width: 100%;
 }
@@ -200,4 +197,21 @@ tbody td:nth-child(2) {
 tbody td:last-child {
   padding: 5px;
   text-align: right;
+}
+/* --------------
+----facility------ */
+.container p {
+  margin:0 0 20px 0;
+  line-height: 1;
+}
+.facility_group {
+  display: flex;
+  line-height: 1;
+}
+.facility_group figure {
+  width: 178px;
+  margin: 0 18px 25px 0;
+}
+.facility_group figure:last-child {
+  margin-right: 0;
 }
