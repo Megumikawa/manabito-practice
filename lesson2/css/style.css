@@ -51,6 +51,7 @@ a {
 .global_nav a:hover {
   background: radial-gradient(#afd6ee, #37a0e1);
 }
+
 .breadcrumb {
   margin-bottom: 15px;
 }
@@ -130,9 +131,10 @@ h2 {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, left bottom;
   font-size: 2.1rem;
+  line-height: 28px;
   margin-top: 0;
   margin-bottom: 20px;
-  padding: 0 10px 10px 15px;
+  padding: 0 10px 13px 15px;
   color: #000;
 }
 .topics ul {
