@@ -214,15 +214,16 @@ tbody td:last-child {
   margin:0 0 20px 0;
   line-height: 1;
 }
-.container main ul {
+.facility-images ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1;
   list-style-type: none;
 }
-.container main ul li {
-  width: 178px
+.facility-images li {
+  width: 178px;
+  margin-top: 20px;
 }
 /* ------------------
 contact
