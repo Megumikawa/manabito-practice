@@ -22,6 +22,7 @@ header, .breadcrumb, .slider, .container, footer {
 a {
   color: #000;
 }
+
 .logo {
   margin-bottom: 20px;
 }
@@ -50,6 +51,7 @@ a {
 }
 .global_nav a:hover {
   background: radial-gradient(#afd6ee, #37a0e1);
+  color: #fff;
 }
 
 .breadcrumb {
@@ -59,6 +61,9 @@ a {
   display: flex;
   list-style-type: none;
   padding-left: 0;
+}
+.breadcrumb ol li a:hover {
+  opacity: 0.5;
 }
 .breadcrumb li:not(first-child) {
   color: #787878;
@@ -92,7 +97,9 @@ h1 {
 }
 .bnr_facility a{
   text-decoration: none;
-
+}
+.bnr_facility a:hover {
+  opacity: 0.5;
 }
 .pagetop a {
   position: relative;
@@ -100,8 +107,11 @@ h1 {
 .pagetop a::before {
   content: url(../images/back_arrow.png);
   position: absolute;
-  right: 148px;
+  right: 138px;
   top: 0;
+}
+.pagetop a:hover {
+  opacity: 0.5;
 }
 .pagetop {
   margin-bottom: 10px;
@@ -112,7 +122,7 @@ h1 {
   background-repeat: repeat-x;
   clear: both;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: center;
   height: 65px;
 }
@@ -238,6 +248,4 @@ textarea {
   width: 400px;
   height: 140px;
   overflow-y: scroll;
-}
-input[type="submit"] {
 }
