@@ -215,3 +215,29 @@ tbody td:last-child {
 .facility_group figure:last-child {
   margin-right: 0;
 }
+/* ------------------
+contact
+--------------------- */
+
+.contact-form ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.form-item {
+  margin-bottom: 15px;
+}
+input[type="name"] {
+  width: 200px;
+  padding: 0;
+}
+input[type="tel"] {
+  width: 100px;
+  padding: 0;
+}
+textarea {
+  width: 400px;
+  height: 140px;
+  overflow-y: scroll;
+}
+input[type="submit"] {
+}
