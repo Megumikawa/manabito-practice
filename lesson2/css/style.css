@@ -7,8 +7,8 @@ body {
   font-size: 1.5rem;
   color: #666;
 }
-body, header, div, ul, ol, main, footer {
-  margin: 0 auto;
+body, header, div, ul, ol, main, footer,figure {
+  margin: 0;
   padding: 0;
 }
 /* -----------------
@@ -78,7 +78,7 @@ a {
 }
 main {
   width: 570px;
-  margin: 0;
+  margin: 0 40px 0 0;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
@@ -214,16 +214,15 @@ tbody td:last-child {
   margin:0 0 20px 0;
   line-height: 1;
 }
-.facility_group {
+.container main ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   line-height: 1;
+  list-style-type: none;
 }
-.facility_group figure {
-  width: 178px;
-  margin: 0 18px 25px 0;
-}
-.facility_group figure:last-child {
-  margin-right: 0;
+.container main ul li {
+  width: 178px
 }
 /* ------------------
 contact
