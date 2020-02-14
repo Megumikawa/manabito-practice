@@ -231,9 +231,10 @@ contact
 
 .contact-form ul {
   padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-.form-item {
+form ul li {
+  list-style-type: none;
   margin-bottom: 15px;
 }
 input[type="name"] {
