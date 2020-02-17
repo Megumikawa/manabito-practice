@@ -27,7 +27,7 @@ a {
   margin-bottom: 20px;
 }
 .global_nav {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .global_nav ul {
   display: flex;
@@ -39,11 +39,11 @@ a {
   border: 5px solid #cecece;
   border-radius: 5px;
   font-size: 2rem;
-  height: 65px;
-  line-height: 65px;
+  height: 66px;
+  line-height: 66px;
   letter-spacing: 1px;
   text-align: center;
-  width: 185px;
+  width: 186px;
 }
 .global_nav a {
   display: block;
@@ -55,7 +55,7 @@ a {
 }
 
 .breadcrumb {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .breadcrumb ol {
   display: flex;
@@ -63,7 +63,7 @@ a {
   padding-left: 0;
 }
 .breadcrumb ol li a:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 .breadcrumb li:not(first-child) {
   color: #787878;
@@ -74,7 +74,7 @@ a {
 }
 .container {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 main {
   width: 570px;
@@ -87,7 +87,7 @@ h1 {
   color: #fff;
   font-size: 3rem;
   height: 78px;
-  line-height: 77px;
+  line-height: 78px;
   margin: 0 0 30px 0;
   text-align: center;
 }
@@ -99,7 +99,7 @@ h1 {
   text-decoration: none;
 }
 .bnr_facility a:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 .pagetop a {
   position: relative;
@@ -111,7 +111,7 @@ h1 {
   top: 0;
 }
 .pagetop a:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 .pagetop {
   margin-bottom: 10px;
@@ -124,11 +124,11 @@ h1 {
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
-  height: 65px;
+  height: 66px;
 }
 address {
   font-style: normal;
-  padding-top: 15px;
+  padding-top: 16px;
 
 }
 small {
@@ -142,9 +142,8 @@ h2 {
   background-position: left top, left bottom;
   font-size: 2.1rem;
   line-height: 28px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding: 0 10px 13px 15px;
+  margin-top: 0 0 20px 0;
+  padding: 0 10px 14px 16px;
   color: #000;
 }
 .topics ul {
@@ -173,6 +172,9 @@ h2 {
 .h2_group p {
   margin-bottom: 20px;
 }
+.sub {
+  clear: both;
+}
 /* ----------------
 -----guide--------- */
 table caption {
@@ -186,26 +188,31 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+table,
+th,
+td {
+  border: 1px solid black;
+}
 thead {
   background-color: #f3be30;
   color: #333;
-  padding: 5px;
+  padding: 6px;
 }
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 tbody td:first-child {
   font-weight: bold;
-  height:45px;
+  height:46px;
   text-align: center;
   width: 30%;
 }
 tbody td:nth-child(2) {
-  padding: 5px;
+  padding:4px;
   width: 45%;
 }
 tbody td:last-child {
-  padding: 5px;
+  padding: 4px;
   text-align: right;
 }
 /* --------------
@@ -235,7 +242,7 @@ contact
 }
 form ul li {
   list-style-type: none;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 input[type="name"] {
   width: 200px;
