@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-size: 1.6rem;
+}
+body, header, main, footer, div, ul, ol, p {
+  margin: 0;
+  padding: 0;
+}
+/* -------------------
+BASE
+------------------ */
+header, .breadcrumb, .container, footer {
+  margin: 0 auto;
+  width: 840px;
+}
+.head-logo {
+  margin: 20px 0;
+  text-align: center;
+}
+.global-nav ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.global-nav ul li {
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  color: #535353;
+  font-size: 18px;
+  height: 60px;
+  line-height: 62px;
+  letter-spacing: 2px;
+  width: 210px;
+}
+.global-nav ul li a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+.global-nav a {
+  display: block;
+}
+.global-nav a:hover {
+  background-color: #cbc3c3;
+}
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.breadcrumb ol li::after {
+  content: "＞";
+  margin: 0 6px;
+}
+.breadcrumb ol li:last-child::after {
+  content: none;
+}
+.breadcrumb ol li a {
+  color: #585858;
+}
+.breadcrumb ol li a:hover {
+  opacity: .5;
+}
+.container {
+  display: flex;
+  margin-bottom: 40px;
+}
+main {
+  margin-right: 30px;
+  width: 820px;
+}
+main h1 {
+  background-image: url(../images/h1_top.png), url(../images/h1_bottom.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  font-size: 26px;
+  margin-top: 0;
+  padding: 28px 0;
+  text-align: center;
+}
+.sub {
+  width: 200px;
+}
+.sub ul li {
+  list-style: none;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.sub ul li a {
+  color: #585858;
+}
+.sub ul li a:hover {
+  opacity: .5;
+}
+.pagetop {
+  margin: 0 0 10px 0;
+  text-align: right;
+}
+.pagetop a {
+  color: #585858;
+}
+.pagetop a:hover {
+  opacity: .5;
+}
+.pagetop a::before {
+  content: url(../images/pagetop.gif);
+}
+.footer-info {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 12px 0 8px 0;
+  text-align: center;
+}
