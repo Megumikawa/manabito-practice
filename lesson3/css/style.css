@@ -8,14 +8,14 @@ body {
   color: #000;
   font-size: 1.6rem;
 }
-body, header, main, footer, div, ul, ol, p {
+body, header, main, footer, div, ul, ol, p, h2 {
   margin: 0;
   padding: 0;
 }
 /* -------------------
 BASE
 ------------------ */
-header, .breadcrumb, .container, footer {
+header, .breadcrumb, .container, footer, .slider {
   margin: 0 auto;
   width: 840px;
 }
@@ -122,4 +122,30 @@ main h1 {
   font-size: 14px;
   padding: 12px 0 8px 0;
   text-align: center;
+}
+/* -----------------
+INDEX
+-------------------*/
+h2 {
+  margin: 0 0 20px 0;
+}
+h2::before {
+  content: url(../images/h2.gif);
+  padding: 8px;
+}
+.topics ul li {
+  border-bottom: 1px dotted;
+  list-style: none;
+  padding: 12px 0;
+  margin: 10px 0;
+  display: flex;
+}
+.topics time {
+  margin-right:16px;
+  font-weight: bold;
+  width: 140px;
+}
+.topics p {
+  font-size: 15px;
+  width: 458px;
 }
