@@ -8,7 +8,7 @@ body {
   color: #000;
   font-size: 1.6rem;
 }
-body, header, main, footer, div, ul, ol, p, h2, global-nav {
+body, header, main, footer, div, ul, ol, p, h2, global-nav, figure {
   margin: 0;
   padding: 0;
 }
@@ -192,4 +192,21 @@ thead {
 }
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+/* -----------------
+WORKS
+-------------------- */
+.gallery p {
+  font-size: 1.4rem;
+  margin: 24px 0;
+}
+.gallery ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery ul li {
+  width: 290;
+  margin-bottom: 18px;
 }
