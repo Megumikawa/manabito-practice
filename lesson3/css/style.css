@@ -34,7 +34,7 @@ header, .breadcrumb, .container, footer, .slider {
   border: 1px solid #e7e7e7;
   border-radius: 2px;
   color: #535353;
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 60px;
   line-height: 62px;
   letter-spacing: 2px;
@@ -80,7 +80,7 @@ main h1 {
   background-image: url(../images/h1_top.png), url(../images/h1_bottom.png);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
-  font-size: 26px;
+  font-size: 2.6rem;
   margin-top: 0;
   padding: 28px 0;
   text-align: center;
@@ -119,7 +119,7 @@ main h1 {
 .footer-info {
   background-color: #f9f9f9;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 12px 0 8px 0;
   text-align: center;
 }
@@ -146,7 +146,6 @@ h2::before {
   width: 140px;
 }
 .topics p {
-  font-size: 15px;
   width: 458px;
 }
 /* ----------------
@@ -160,7 +159,6 @@ exhibition
   margin: 0 30px 20px 0;
 }
 .introduction p{
-  font-size: 15px;
   margin-bottom: 20px;
 }
 .sub {
