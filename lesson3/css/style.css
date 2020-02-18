@@ -157,11 +157,11 @@ exhibition
 }
 .introduction img {
   float: left;
-  margin: 0 30px 16px 0;
+  margin: 0 30px 20px 0;
 }
 .introduction p{
   font-size: 15px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 .sub {
   clear: both;
