@@ -102,6 +102,7 @@ main h1 {
 .pagetop {
   margin: 0 0 10px 0;
   text-align: right;
+  position: relative;
 }
 .pagetop a {
   color: #585858;
@@ -111,6 +112,9 @@ main h1 {
 }
 .pagetop a::before {
   content: url(../images/pagetop.gif);
+  position: absolute;
+  right: 150px;
+  top: 2px;
 }
 .footer-info {
   background-color: #f9f9f9;
