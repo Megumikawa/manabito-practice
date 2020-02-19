@@ -8,6 +8,7 @@ body {
   color: #666666;
   background: url(../images/bg.jpg) center top repeat-x;
   font-size: 1.6rem;
+  margin: 0;
 }
 header, .global-nav, .breadcrumb, .contents, footer {
   margin: 0 auto;
@@ -122,6 +123,9 @@ footer address {
 }
 address {
   font-style: normal;
+}
+.address-br {
+  display: none;
 }
 .copyright {
   margin: 0;
@@ -256,3 +260,51 @@ input[type=email] {
   text-align: left;
   width: 100%;
 } */
+@media screen and (max-width:767px) {
+  header, .global-nav, .breadcrumb, .contents, footer {
+    width: 100%;
+  }
+  .logo {
+    margin: 20px 0 0;
+  }
+  .global-nav ul {
+    flex-wrap: wrap;
+  }
+  .global-nav ul li {
+    width: 50%;
+    border-radius: 0;
+  }
+  .global-nav ul li:nth-child(-n+2) {
+    border-bottom: none;
+  }
+  .global-nav ul li:nth-child(odd) {
+    border-right: none;
+  }
+  .breadcrumb {
+    width: 94%;
+  }
+  .contents {
+    display: block;
+  }
+  main {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+  }
+  .sub {
+    width: 100%;
+    text-align: center;
+  }
+  .pagetop {
+    width: 98%;
+  }
+  footer address {
+    font-size: 1.2rem;
+  }
+  .address-br {
+    display: block;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
+}
