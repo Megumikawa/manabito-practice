@@ -8,7 +8,7 @@ body {
   color: #000;
   font-size: 1.6rem;
 }
-body, header, main, footer, div, ul, ol, p, h2, global-nav, figure {
+body, header, main, footer, div, ul, ol, p, h2, .global-nav, figure {
   margin: 0;
   padding: 0;
 }
@@ -55,12 +55,9 @@ header, .breadcrumb, .container, footer, .slider {
   list-style: none;
   margin-bottom: 30px;
 }
-.breadcrumb ol li::after {
+.breadcrumb ol li:not(:last-child)::after {
   content: "＞";
   margin: 0 6px;
-}
-.breadcrumb ol li:last-child::after {
-  content: none;
 }
 .breadcrumb ol li a {
   color: #585858;
@@ -134,9 +131,9 @@ h2::before {
   padding: 8px;
 }
 .topics ul li {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #000;
   list-style: none;
-  padding: 12px 0;
+  padding: 14px 0;
   margin: 10px 0;
   display: flex;
 }
@@ -200,22 +197,22 @@ WORKS
   font-size: 1.4rem;
   margin: 24px 0;
 }
-.gallery ul {
-  list-style: none;
+.gallery-pic {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
   justify-content: space-between;
 }
-.gallery ul li {
-  width: 290;
+.gallery-pic li {
   margin-bottom: 18px;
+  width: 290px;
 }
 /* ------------------
 TICKET
 --------------------- */
 .form-guide p {
-  margin: 0 0 24px 0;
   font-size: 1.5rem;
+  margin: 0 0 24px 0;
 }
 .form-guide ol {
   font-size: 1.5rem;
@@ -228,7 +225,7 @@ form ul {
 form ul li {
   margin-bottom: 26px;
 }
-input[type=name],[type=email] {
+input[type=text],[type=email] {
   background-color: #fecccb;
   width: 250px;
 }
@@ -236,6 +233,4 @@ textarea {
   overflow-y: scroll;
   height: 144px;
   width: 306px;
-}
-input[type=submit] {
 }

@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>前売り券申し込み｜日本の景色写真展</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -36,8 +40,8 @@
         </div>
         <form method="post" action="#">
           <ul>
-            <li><label for="name">お名前（必須）</label><br><input  type="name" id="name" name="name" required></li>
-            <li><label for="mail">メールアドレス（必須）</label><br>  <input  type="email" id="mail" name="mail" required></li>
+            <li><label for="name">お名前（必須）</label><br><input type="text" id="name" name="name" required></li>
+            <li><label for="mail">メールアドレス（必須）</label><br><input type="email" id="mail" name="mail" required></li>
             <li>ご希望会場<br>
               <select name="ご希望会場">
                 <option value="東京">東京</option>

@@ -1,4 +1,6 @@
 $(function(){
+  'use strict';
+
   $('#slider ul').bxSlider();
 
   $('#pagetop').on('click',function(){
