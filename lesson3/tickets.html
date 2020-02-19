@@ -32,6 +32,23 @@
             <li>申し込み後、メールが送信され、前売り券の番号が発行されます。</li>
             <li>当日、会場の受付で前売り券の番号をご提示いただき、料金をお支払いください。</li>
           </ol>
+          <form method="post" action="#">
+            <ul>
+              <li><label for="name">お名前（必須）</label><br><input  type="name" id="name" name="name" required></li>
+              <li><label for="mail">メールアドレス（必須）</label><br>  <input  type="email" id="mail" name="mail" required></li>
+              <li>ご希望会場<br>
+                <select name="ご希望会場">
+                  <option value="東京">東京</option>
+                  <option value="大阪">大阪</option>
+                  <option value="福岡" selected="selected">福岡</option>
+                  <option value="名古屋">名古屋</option>
+                  <option value="仙台">仙台</option>
+                </select>
+              </li>
+              <li><label for="freetext">備考</label><br><textarea id="freetext"name="freetext"></textarea></li>
+              <li><input type="submit" value="申し込み内容の確認"></li>
+            </ul>
+          </form>
       </main>
       <div class="sub">
         <ul>
