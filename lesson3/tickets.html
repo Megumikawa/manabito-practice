@@ -26,12 +26,14 @@
     <div class="container">
       <main>
         <h1>前売り券申し込み</h1>
+        <div class="form-guide">
           <p>各会場の前売り券をこちらよりお申し込みいただけます。下記の手順をよく読んでからお申し込みください。</p>
           <ol>
             <li>「お名前」、「メールアドレス」を記入し、「ご希望会場」を選択してお申し込みください。</li>
             <li>申し込み後、メールが送信され、前売り券の番号が発行されます。</li>
             <li>当日、会場の受付で前売り券の番号をご提示いただき、料金をお支払いください。</li>
           </ol>
+        </div>
           <form method="post" action="#">
             <ul>
               <li><label for="name">お名前（必須）</label><br><input  type="name" id="name" name="name" required></li>
@@ -45,7 +47,7 @@
                   <option value="仙台">仙台</option>
                 </select>
               </li>
-              <li><label for="freetext">備考</label><br><textarea id="freetext"name="freetext"></textarea></li>
+              <li><label for="freetext">備考</label><br><textarea id="freetext" name="freetext"></textarea></li>
               <li><input type="submit" value="申し込み内容の確認"></li>
             </ul>
           </form>

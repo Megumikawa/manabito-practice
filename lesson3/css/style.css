@@ -210,3 +210,32 @@ WORKS
   width: 290;
   margin-bottom: 18px;
 }
+/* ------------------
+TICKET
+--------------------- */
+.form-guide p {
+  margin: 0 0 24px 0;
+  font-size: 1.5rem;
+}
+.form-guide ol {
+  font-size: 1.5rem;
+  padding: 0 0 0 20px;
+  margin: 0 0 26px 16px;
+}
+form ul {
+  list-style: none;
+}
+form ul li {
+  margin-bottom: 26px;
+}
+input[type=name],[type=email] {
+  background-color: #fecccb;
+  width: 250px;
+}
+textarea {
+  overflow-y: scroll;
+  height: 144px;
+  width: 306px;
+}
+input[type=submit] {
+}
