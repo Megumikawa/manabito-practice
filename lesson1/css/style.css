@@ -220,7 +220,7 @@ main p {
 .animal_area figure {
   display: flex;
   margin: 0 20px 20px 0;
-  width: 265px;
+  width: 240px;
 }
 /* .animal_area figure:nth-child(even) {
   width: 265px;
