@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+}
 /* base */
 html {
   font-size: 62.5%;
@@ -181,7 +184,7 @@ main ul time {
 .guide_table {
   border-collapse: collapse;
   text-align: center;
-  width: 560px;
+  width: 508px;
   border: 1px solid #000;
 }
 .guide_table caption {
@@ -219,9 +222,9 @@ main p {
   margin: 0 20px 20px 0;
   width: 265px;
 }
-.animal_area figure:nth-child(even) {
+/* .animal_area figure:nth-child(even) {
   width: 265px;
-}
+} */
 .animal_area figcaption {
   margin: 0 0 0 20px;
   width: 165px;
@@ -347,6 +350,7 @@ input[type=email] {
   .guide_table tbody th,
   .guide_table tbody td {
     display: block;
+    width: 100%;
   }
   .guide_table tbody th {
     background-color: #ffdd62;
@@ -369,5 +373,14 @@ input[type=email] {
   }
   .animal_area figcaption {
     width: 100%;
+  }
+  .contact_table th,
+  .contact_table td {
+    display: block;
+    width: 100%;
+  }
+  .contact_table th {
+    border-bottom: none;
+    background-color: #eef8fa;
   }
 }
