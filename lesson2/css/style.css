@@ -129,6 +129,9 @@ h1 {
   text-align: center;
   height: 66px;
 }
+.address-br {
+  display: none;
+}
 address {
   font-style: normal;
   padding-top: 16px;
@@ -256,4 +259,56 @@ textarea {
   height: 140px;
   overflow-y: scroll;
   width: 400px;
+}
+
+
+/* --------------------
+レスポンシブ
+----------------------*/
+@media screen and (max-width:767px) {
+
+  body, header, div, ul, ol, main, .sub, h1, footer,figure {
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .global_nav ul {
+    flex-wrap: wrap;
+  }
+  .global_nav ul li {
+    width: 100%;
+    border: 2px solid #cecece;
+    border-radius: 0;
+    height: 100%;
+    line-height: 160%;
+    font-size: 1.8rem;
+  }
+  .global_nav ul li:not(:last-child) {
+    border-bottom: none;
+  }
+  .global_nav a {
+    height: 100%;
+  }
+  .breadcrumb {
+    width: 96%;
+  }
+  .container {
+    display: block;
+    width: 100%;
+  }
+  h1 {
+    border-radius: 10px;
+  }
+  .pagetop {
+    margin-right: 4%;
+  }
+  .footer_info {
+    font-size: 74%;
+  }
+  .address-br {
+    display: block;
+  }
+
 }
