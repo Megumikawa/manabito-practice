@@ -351,4 +351,11 @@ textarea {
   .container p {
     margin: 0 0 8%;
   }
+  /* 診療科のご案内--guide-- */
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  .table-wrapper table {
+    width: 570px;
+  }
 }
