@@ -3,9 +3,12 @@
 html {
   font-size: 62.5%;
 }
+* {
+  box-sizing: border-box;
+}
 body {
-  font-size: 1.5rem;
   color: #666;
+  font-size: 1.5rem;
 }
 body, header, div, ul, ol, main, footer,figure {
   margin: 0;
@@ -22,7 +25,6 @@ header, .breadcrumb, .slider, .container, footer {
 a {
   color: #000;
 }
-
 .logo {
   margin-bottom: 20px;
 }
@@ -40,7 +42,7 @@ a {
   border-radius: 5px;
   font-size: 2rem;
   height: 66px;
-  line-height: 66px;
+  line-height: 60px;
   letter-spacing: 1px;
   text-align: center;
   width: 186px;
@@ -48,12 +50,12 @@ a {
 .global_nav a {
   display: block;
   text-decoration: none;
+  height: 56px;
 }
 .global_nav a:hover {
   background: radial-gradient(#afd6ee, #37a0e1);
   color: #fff;
 }
-
 .breadcrumb {
   margin-bottom: 16px;
 }
@@ -79,6 +81,7 @@ a {
 main {
   width: 570px;
   margin: 0 40px 0 0;
+  width: 570px;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
@@ -129,7 +132,6 @@ h1 {
 address {
   font-style: normal;
   padding-top: 16px;
-
 }
 small {
   padding-top: 0;
@@ -150,9 +152,9 @@ h2 {
   list-style-type: none;
 }
 .topics ul li {
+  border-bottom: 2px dotted #afafaf;
   margin-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px dotted #afafaf;
 }
 .topics ul li time {
   color: #138edb;
@@ -178,8 +180,8 @@ h2 {
 /* ----------------
 -----guide--------- */
 table caption {
-  text-align: left;
   margin-bottom: 30px;
+  text-align: left;
 }
 .table_guide {
   font-weight: bold;
@@ -188,9 +190,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-table,
-th,
-td {
+table, th, td {
   border: 1px solid black;
 }
 thead {
@@ -218,8 +218,8 @@ tbody td:last-child {
 /* --------------
 ----facility------ */
 .container p {
-  margin:0 0 20px 0;
   line-height: 1;
+  margin:0 0 20px 0;
 }
 .facility-images ul {
   display: flex;
@@ -229,31 +229,31 @@ tbody td:last-child {
   list-style-type: none;
 }
 .facility-images li {
+  width: 178px;  margin-top: 20px;
   width: 178px;
-  margin-top: 20px;
 }
 /* ------------------
 contact
 --------------------- */
 
 .contact-form ul {
-  padding-left: 30px;
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 form ul li {
   list-style-type: none;
   margin-bottom: 16px;
 }
 input[type="name"] {
-  width: 200px;
   padding: 0;
+  width: 200px;
 }
 input[type="tel"] {
-  width: 100px;
   padding: 0;
+  width: 100px;
 }
 textarea {
-  width: 400px;
   height: 140px;
   overflow-y: scroll;
+  width: 400px;
 }
