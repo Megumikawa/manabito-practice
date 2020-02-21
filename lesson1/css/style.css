@@ -245,6 +245,9 @@ main p {
 .contact_table td {
   padding: 10px;
 }
+.contact_table th {
+  width: 32%;
+}
 input[type=text] {
   width: 200px;
 }
