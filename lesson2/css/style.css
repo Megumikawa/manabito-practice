@@ -10,7 +10,7 @@ body {
   color: #666;
   font-size: 1.5rem;
 }
-body, header, div, ul, ol, main, footer,figure {
+body, header, main, footer, figure {
   margin: 0;
   padding: 0;
 }
@@ -153,6 +153,7 @@ h2 {
 }
 .topics ul {
   list-style-type: none;
+  padding-left: 0;
 }
 .topics ul li {
   border-bottom: 2px dotted #afafaf;
@@ -230,9 +231,10 @@ tbody td:last-child {
   justify-content: space-between;
   line-height: 1;
   list-style-type: none;
+  padding-left: 0;
 }
 .facility-images li {
-  width: 178px;  margin-top: 20px;
+  margin-top: 20px;
   width: 178px;
 }
 /* ------------------
@@ -267,8 +269,11 @@ textarea {
 ----------------------*/
 @media screen and (max-width:767px) {
 
-  body, header, div, ul, ol, main, .sub, h1, footer,figure {
+  body, header, main, .sub, h1, footer, figure, .global_nav, .container {
     width: 100%;
+  }
+  .global_nav, .container {
+    padding: 0 4px;
   }
   .logo {
     text-align: center;
@@ -298,6 +303,9 @@ textarea {
     display: block;
     width: 100%;
   }
+  main {
+    margin-bottom: 20%;
+  }
   h1 {
     border-radius: 10px;
   }
@@ -310,5 +318,37 @@ textarea {
   .address-br {
     display: block;
   }
-
+  /* ホーム画面--Index-- */
+  .slider {
+    width: 100%;
+  }
+  .slider img {
+    height: auto;
+  }
+  .topics ul li time {
+    display: block;
+    padding-right: 0;
+  }
+  .topics {
+    padding: 0 2%;
+  }
+  /* 当病院について--about-- */
+  .h2_group {
+    padding: 0 2%;
+  }
+  .photo_left {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 6%;
+  }
+  .photo_right {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 6%;
+  }
+  .container p {
+    margin: 0 0 8%;
+  }
 }
