@@ -121,8 +121,8 @@ footer address {
   background-repeat: repeat-x;
   color: #fff;
   font-size:1.4rem;
-  text-align: center;
   padding: 10px 40px;
+  text-align: center;
 }
 address {
   font-style: normal;
@@ -142,6 +142,7 @@ main h2 {
   background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
   background-repeat: no-repeat, repeat-x;
   background-position: right top, left bottom;
+  border-radius: 10px;
   color: #fff;
   padding: 13px;
 }
@@ -152,14 +153,14 @@ main h2 {
 .top_info li {
   border-bottom: 1px dashed #ff0009;
   display: flex;
-  padding: 20px 20px 20px 0;
   line-height: center;
+  padding: 20px 20px 20px 0;
 }
 main ul time {
   display: block;
-  width: 160px;
   font-size: 1.3rem;
   font-weight: bold;
+  width: 160px;
 }
 .article-title {
   display: block;
@@ -182,10 +183,10 @@ main ul time {
 }
 /* guide　　ガイドについて */
 .guide_table {
+  border: 1px solid #000;
   border-collapse: collapse;
   text-align: center;
   width: 508px;
-  border: 1px solid #000;
 }
 .guide_table caption {
   font-size: 1.4rem;
@@ -276,8 +277,8 @@ input[type=email] {
     flex-wrap: wrap;
   }
   .global-nav ul li {
-    width: 50%;
     border-radius: 0;
+    width: 50%;
   }
   .global-nav ul li:nth-child(-n+2) {
     border-bottom: none;
@@ -292,14 +293,14 @@ input[type=email] {
     display: block;
   }
   main {
-    width: 100%;
     box-sizing: border-box;
     margin: 0 0 20px;
+    width: 100%;
   }
   .sub {
     clear: both;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
   .pagetop {
     width: 98%;
@@ -319,9 +320,7 @@ input[type=email] {
   .graphic img {
     height: auto;
   }
-  main h2 {
-    border-radius: 14px;
-  }
+
   .top_info li {
     flex-wrap: wrap;
   }
@@ -333,13 +332,14 @@ input[type=email] {
     padding: 0 0 0 10px;
   }
   .about_area img {
-    width: 100%;
+    height: auto;
     margin: 10px 0;
+    width: 100%;
   }
   .about_area p {
     clear: both;
-    margin: 10px 0 16px;
     font-size: 1.4rem;
+    margin: 10px 0 16px;
   }
   .guide_table {
     width: 100%;
@@ -365,8 +365,8 @@ input[type=email] {
     margin: 20px 0;
   }
   .animal_area {
-    width: 100%;
     display: block;
+    width: 100%;
   }
   .animal_area figure {
     width: 100%;
@@ -380,7 +380,7 @@ input[type=email] {
     width: 100%;
   }
   .contact_table th {
-    border-bottom: none;
     background-color: #eef8fa;
+    border-bottom: none;
   }
 }
