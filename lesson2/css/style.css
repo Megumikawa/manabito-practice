@@ -358,4 +358,15 @@ textarea {
   .table-wrapper table {
     width: 570px;
   }
+  /* 施設紹介--facility-- */
+  .container p {
+    padding: 0 2% 0;
+  }
+  /* お問い合わせ--contact-- */
+  .form-list {
+    padding: 2%;
+  }
+  #freetext {
+    width: 100%;
+  }
 }
