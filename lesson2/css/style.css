@@ -175,9 +175,6 @@ h2 {
   float: right;
   margin: 0 0 20px 20px;
 }
-.h2_group p {
-  margin-bottom: 20px;
-}
 .sub {
   clear: both;
 }
@@ -221,9 +218,9 @@ tbody td:last-child {
 }
 /* --------------
 ----facility------ */
-.container p {
-  line-height: 1;
-  margin:0 0 20px 0;
+.facility-guide {
+  line-height: 20px;
+  margin: 0 0 8%;
 }
 .facility-images ul {
   display: flex;
@@ -273,7 +270,7 @@ textarea {
     width: 100%;
   }
   .global_nav, .container {
-    padding: 0 4px;
+    margin: 0;
   }
   .logo {
     text-align: center;
@@ -283,12 +280,12 @@ textarea {
     flex-wrap: wrap;
   }
   .global_nav ul li {
-    width: 100%;
     border: 2px solid #cecece;
     border-radius: 0;
     height: 100%;
-    line-height: 160%;
     font-size: 1.8rem;
+    line-height: 160%;
+    width: 100%;
   }
   .global_nav ul li:not(:last-child) {
     border-bottom: none;
@@ -330,41 +327,49 @@ textarea {
     padding-right: 0;
   }
   .topics {
-    padding: 0 2%;
+    margin: 0 2%;
   }
   /* 当病院について--about-- */
   .h2_group {
-    padding: 0 2%;
+    margin: 0 2%;
   }
   .photo_left {
     float: none;
-    width: 100%;
     height: auto;
     margin: 0 0 6%;
+    width: 100%;
   }
   .photo_right {
     float: none;
-    width: 100%;
     height: auto;
     margin: 0 0 6%;
-  }
-  .container p {
-    margin: 0 0 8%;
+    width: 100%;
   }
   /* 診療科のご案内--guide-- */
   .table-wrapper {
     overflow-x: scroll;
   }
   .table-wrapper table {
+    margin: 0 2%;
     width: 570px;
   }
   /* 施設紹介--facility-- */
-  .container p {
-    padding: 0 2% 0;
+  .facility-guide {
+    margin: 0 2% 8%;
+  }
+  .facility-images {
+    margin: 0 2%;
   }
   /* お問い合わせ--contact-- */
+  .contact-guide {
+    margin: 0 2%;
+  }
+  .contact-form ul li {
+    margin-right: 2%;
+  }
   .form-list {
-    padding: 2%;
+    padding: 0;
+    margin: 2%;
   }
   #freetext {
     width: 100%;
