@@ -203,7 +203,7 @@ WORKS
   list-style: none;
   justify-content: space-between;
 }
-.gallery-pic li {
+.gallery-pic ul li {
   margin-bottom: 18px;
   width: 290px;
 }
@@ -295,8 +295,23 @@ textarea {
     margin: 0 6% 2% 0;
   }
   /* スケジュール　-schedule-- */
+  .table-wrapper {
+    overflow-x: scroll;
+  }
   .container table {
+    width: 170%;
     margin: 0 2%;
     overflow-x: scroll;
+  }
+  /* 作品紹介--works-- */
+  .gallery p {
+    margin: 0 2% 4%;
+  }
+  /* 前売り券申し込み　--tickets-- */
+  .form-guide p {
+    margin: 0 2% 4%;
+  }
+  form {
+    margin: 0 4%;
   }
 }
