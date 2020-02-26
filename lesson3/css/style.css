@@ -285,7 +285,7 @@ textarea {
   .sub {
     margin: 16% 0 0;
   }
-  /* 展覧会について--exhibition */
+  /* 展覧会について--exhibition--*/
   .introduction {
     margin: 0 2%;
   }
@@ -294,7 +294,7 @@ textarea {
     height: auto;
     margin: 0 6% 2% 0;
   }
-  /* スケジュール　-schedule-- */
+  /* スケジュール　--schedule-- */
   .table-wrapper {
     overflow-x: scroll;
   }
@@ -306,6 +306,18 @@ textarea {
   /* 作品紹介--works-- */
   .gallery p {
     margin: 0 2% 4%;
+  }
+  .gallery-pic {
+    margin: 0 auto;
+  }
+  .gallery-pic li {
+    width: 48%;
+    height: auto;
+    max-width: 290px;
+  }
+  .gallery-pic img {
+    width: 100%;
+    height: auto;
   }
   /* 前売り券申し込み　--tickets-- */
   .form-guide p {
