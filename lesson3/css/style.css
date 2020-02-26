@@ -287,19 +287,20 @@ textarea {
   }
   /* 展覧会について--exhibition--*/
   .introduction {
+    display: block;
     margin: 0 2%;
   }
   .introduction img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    margin: 0 6% 2% 0;
+    margin: 0 0 4%;
   }
   /* スケジュール　--schedule-- */
   .table-wrapper {
     overflow-x: scroll;
   }
   .container table {
-    width: 170%;
+    width: 610px;
     margin: 0 2%;
     overflow-x: scroll;
   }
@@ -308,8 +309,9 @@ textarea {
     margin: 0 2% 4%;
   }
   .gallery-pic {
-    margin: 0 auto;
+    margin: 0 2%;
   }
+
   .gallery-pic li {
     width: 48%;
     height: auto;
@@ -322,6 +324,9 @@ textarea {
   /* 前売り券申し込み　--tickets-- */
   .form-guide p {
     margin: 0 2% 4%;
+  }
+  .form-guide ol li {
+    margin-bottom: 2%;
   }
   form {
     margin: 0 4%;
