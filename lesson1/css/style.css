@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+}
 /* base */
 html {
   font-size: 62.5%;
@@ -8,6 +11,7 @@ body {
   color: #666666;
   background: url(../images/bg.jpg) center top repeat-x;
   font-size: 1.6rem;
+  margin: 0;
 }
 header, .global-nav, .breadcrumb, .contents, footer {
   margin: 0 auto;
@@ -117,11 +121,14 @@ footer address {
   background-repeat: repeat-x;
   color: #fff;
   font-size:1.4rem;
-  text-align: center;
   padding: 10px 40px;
+  text-align: center;
 }
 address {
   font-style: normal;
+}
+.address-br {
+  display: none;
 }
 .copyright {
   margin: 0;
@@ -135,6 +142,7 @@ main h2 {
   background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
   background-repeat: no-repeat, repeat-x;
   background-position: right top, left bottom;
+  border-radius: 10px;
   color: #fff;
   padding: 13px;
 }
@@ -145,14 +153,14 @@ main h2 {
 .top_info li {
   border-bottom: 1px dashed #ff0009;
   display: flex;
-  padding: 20px 20px 20px 0;
   line-height: center;
+  padding: 20px 20px 20px 0;
 }
 main ul time {
   display: block;
-  width: 160px;
   font-size: 1.3rem;
   font-weight: bold;
+  width: 160px;
 }
 .article-title {
   display: block;
@@ -175,9 +183,10 @@ main ul time {
 }
 /* guide　　ガイドについて */
 .guide_table {
+  border: 1px solid #000;
   border-collapse: collapse;
   text-align: center;
-  width: 560px;
+  width: 508px;
 }
 .guide_table caption {
   font-size: 1.4rem;
@@ -194,6 +203,7 @@ main ul time {
 .guide_table th,
 .guide_table td {
   padding: 10px;
+  border: 1px solid #000;
 }
 .guide_table thead {
   background-color: #ffdd62;
@@ -211,11 +221,11 @@ main p {
 .animal_area figure {
   display: flex;
   margin: 0 20px 20px 0;
-  width: 265px;
+  width: 240px;
 }
-.animal_area figure:nth-child(even) {
+/* .animal_area figure:nth-child(even) {
   width: 265px;
-}
+} */
 .animal_area figcaption {
   margin: 0 0 0 20px;
   width: 165px;
@@ -234,6 +244,9 @@ main p {
 .contact_table th,
 .contact_table td {
   padding: 10px;
+}
+.contact_table th {
+  width: 32%;
 }
 input[type=text] {
   width: 200px;
@@ -256,3 +269,121 @@ input[type=email] {
   text-align: left;
   width: 100%;
 } */
+@media screen and (max-width:767px) {
+  header, .global-nav, .breadcrumb, .contents, footer {
+    width: 100%;
+  }
+  .logo {
+    margin: 20px 0 0;
+  }
+  .global-nav ul {
+    flex-wrap: wrap;
+  }
+  .global-nav ul li {
+    border-radius: 0;
+    width: 50%;
+  }
+  .global-nav ul li:nth-child(-n+2) {
+    border-bottom: none;
+  }
+  .global-nav ul li:nth-child(odd) {
+    border-right: none;
+  }
+  .breadcrumb {
+    width: 94%;
+  }
+  .contents {
+    display: block;
+  }
+  main {
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  .sub {
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+  .pagetop {
+    width: 98%;
+  }
+  footer address {
+    font-size: 1.2rem;
+  }
+  .address-br {
+    display: block;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
+  .graphic {
+    width: 100%;
+  }
+  .graphic img {
+    height: auto;
+  }
+
+  .top_info li {
+    flex-wrap: wrap;
+  }
+  main ul time {
+    font-size: 1.6rem;
+    margin: 0 0 10px;
+  }
+  .article-title {
+    padding: 0 0 0 10px;
+  }
+  .about_area img {
+    height: auto;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .about_area p {
+    clear: both;
+    font-size: 1.4rem;
+    margin: 10px 0 16px;
+  }
+  .guide_table {
+    width: 100%;
+  }
+  .guide_table thead {
+    display: none;
+  }
+  .guide_table tbody th,
+  .guide_table tbody td {
+    display: block;
+    width: 100%;
+  }
+  .guide_table tbody th {
+    background-color: #ffdd62;
+  }
+  .guide_table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  .guide_table tbody td:not(:last-child) {
+    border-bottom: none;
+  }
+  .contents p {
+    margin: 20px 0;
+  }
+  .animal_area {
+    display: block;
+    width: 100%;
+  }
+  .animal_area figure {
+    width: 100%;
+  }
+  .animal_area figcaption {
+    width: 100%;
+  }
+  .contact_table th,
+  .contact_table td {
+    display: block;
+    width: 100%;
+  }
+  .contact_table th {
+    background-color: #eef8fa;
+    border-bottom: none;
+  }
+}

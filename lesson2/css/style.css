@@ -3,11 +3,14 @@
 html {
   font-size: 62.5%;
 }
-body {
-  font-size: 1.5rem;
-  color: #666;
+* {
+  box-sizing: border-box;
 }
-body, header, div, ul, ol, main, footer,figure {
+body {
+  color: #666;
+  font-size: 1.5rem;
+}
+body, header, main, footer, figure {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +25,6 @@ header, .breadcrumb, .slider, .container, footer {
 a {
   color: #000;
 }
-
 .logo {
   margin-bottom: 20px;
 }
@@ -40,7 +42,7 @@ a {
   border-radius: 5px;
   font-size: 2rem;
   height: 66px;
-  line-height: 66px;
+  line-height: 60px;
   letter-spacing: 1px;
   text-align: center;
   width: 186px;
@@ -48,12 +50,12 @@ a {
 .global_nav a {
   display: block;
   text-decoration: none;
+  height: 56px;
 }
 .global_nav a:hover {
   background: radial-gradient(#afd6ee, #37a0e1);
   color: #fff;
 }
-
 .breadcrumb {
   margin-bottom: 16px;
 }
@@ -79,6 +81,7 @@ a {
 main {
   width: 570px;
   margin: 0 40px 0 0;
+  width: 570px;
 }
 h1 {
   background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
@@ -126,10 +129,12 @@ h1 {
   text-align: center;
   height: 66px;
 }
+.address-br {
+  display: none;
+}
 address {
   font-style: normal;
   padding-top: 16px;
-
 }
 small {
   padding-top: 0;
@@ -148,11 +153,12 @@ h2 {
 }
 .topics ul {
   list-style-type: none;
+  padding-left: 0;
 }
 .topics ul li {
+  border-bottom: 2px dotted #afafaf;
   margin-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px dotted #afafaf;
 }
 .topics ul li time {
   color: #138edb;
@@ -169,17 +175,14 @@ h2 {
   float: right;
   margin: 0 0 20px 20px;
 }
-.h2_group p {
-  margin-bottom: 20px;
-}
 .sub {
   clear: both;
 }
 /* ----------------
 -----guide--------- */
 table caption {
-  text-align: left;
   margin-bottom: 30px;
+  text-align: left;
 }
 .table_guide {
   font-weight: bold;
@@ -188,9 +191,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-table,
-th,
-td {
+table, th, td {
   border: 1px solid black;
 }
 thead {
@@ -217,9 +218,9 @@ tbody td:last-child {
 }
 /* --------------
 ----facility------ */
-.container p {
-  margin:0 0 20px 0;
-  line-height: 1;
+.facility-guide {
+  line-height: 20px;
+  margin: 0 0 8%;
 }
 .facility-images ul {
   display: flex;
@@ -227,33 +228,150 @@ tbody td:last-child {
   justify-content: space-between;
   line-height: 1;
   list-style-type: none;
+  padding-left: 0;
 }
 .facility-images li {
-  width: 178px;
   margin-top: 20px;
+  width: 178px;
 }
 /* ------------------
 contact
 --------------------- */
 
 .contact-form ul {
-  padding-left: 30px;
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 form ul li {
   list-style-type: none;
   margin-bottom: 16px;
 }
 input[type="name"] {
-  width: 200px;
   padding: 0;
+  width: 200px;
 }
 input[type="tel"] {
-  width: 100px;
   padding: 0;
+  width: 100px;
 }
 textarea {
-  width: 400px;
   height: 140px;
   overflow-y: scroll;
+  width: 400px;
+}
+
+
+/* --------------------
+レスポンシブ
+----------------------*/
+@media screen and (max-width:767px) {
+
+  body, header, main, .sub, h1, footer, figure, .global_nav, .container {
+    width: 100%;
+  }
+  .global_nav, .container {
+    margin: 0;
+  }
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .global_nav ul {
+    flex-wrap: wrap;
+  }
+  .global_nav ul li {
+    border: 2px solid #cecece;
+    border-radius: 0;
+    height: 100%;
+    font-size: 1.8rem;
+    line-height: 160%;
+    width: 100%;
+  }
+  .global_nav ul li:not(:last-child) {
+    border-bottom: none;
+  }
+  .global_nav a {
+    height: 100%;
+  }
+  .breadcrumb {
+    width: 96%;
+  }
+  .container {
+    display: block;
+    width: 100%;
+  }
+  main {
+    margin-bottom: 20%;
+  }
+  h1 {
+    border-radius: 10px;
+  }
+  .pagetop {
+    margin-right: 4%;
+  }
+  .footer_info {
+    font-size: 74%;
+  }
+  .address-br {
+    display: block;
+  }
+  /* ホーム画面--Index-- */
+  .slider {
+    width: 100%;
+  }
+  .slider img {
+    height: auto;
+  }
+  .topics ul li time {
+    display: block;
+    padding-right: 0;
+  }
+  .topics {
+    margin: 0 2%;
+  }
+  /* 当病院について--about-- */
+  .h2_group {
+    margin: 0 2%;
+  }
+  .photo_left {
+    float: none;
+    height: auto;
+    margin: 0 0 6%;
+    width: 100%;
+  }
+  .photo_right {
+    float: none;
+    height: auto;
+    margin: 0 0 6%;
+    width: 100%;
+  }
+  /* 診療科のご案内--guide-- */
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  .table-wrapper table {
+    margin: 0 2%;
+    width: 570px;
+  }
+  /* 施設紹介--facility-- */
+  .facility-guide {
+    margin: 0 2% 8%;
+  }
+  .facility-images {
+    margin: 0 2%;
+  }
+  /* お問い合わせ--contact-- */
+  .contact-guide {
+    margin: 0 2%;
+  }
+  .contact-form ul li {
+    margin-right: 2%;
+  }
+  .form-list {
+    padding: 0;
+    margin: 2%;
+  }
+  #freetext {
+    width: 100%;
+  }
 }

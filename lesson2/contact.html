@@ -26,8 +26,8 @@
   <div class="container">
     <main>
       <h1>お問い合わせ</h1>
-      <p>当病院の診療に関するご質問やご意見・ご要望ど、お気軽にお問い合わせください。</p>
-      <p>下記の注意事項をよくお読みいただき、お問い合わせください。</p>
+      <p class="contact-guide">当病院の診療に関するご質問やご意見・ご要望ど、お気軽にお問い合わせください。</p>
+      <p class="contact-guide">下記の注意事項をよくお読みいただき、お問い合わせください。</p>
       <div class="contact-form">
         <ul>
           <li>「お問い合わせ種類」から必要な項目を選択してください。</li>
@@ -36,8 +36,8 @@
         </ul>
       </div>
       <form method="post" action="#">
-        <ul>
-          <li><label for="name">お名前（必須）</label><br><input id="name" type="name" name="name" required></li>
+        <ul class="form-list">
+          <li><label for="text">お名前（必須）</label><br><input id="name" type="name" name="name" required></li>
           <li><label for="tel">電話番号（必須）</label><br><input id="tel" type="tel" name="tell" required></li>
           <li>お問い合わせ種類<br>
             <input id="test" type="checkbox" name="kind" value="test"><label form="test">診療・検査について</label>
@@ -59,7 +59,7 @@
   <footer>
     <p class="pagetop"><a href="#">ページの先頭へ戻る</a></p>
     <div class="footer_info">
-      <address>東京都八王子市XXX-X　電話 代表：042-XXX-XXXX　外来受付：042-XXX-XXXX</address>
+      <address>東京都八王子市XXX-X　電話 代表：042-XXX-XXXX　<br class="address-br">外来受付：042-XXX-XXXX</address>
       <small>Copyright 2015 SORAIRO HOSPITAL ALL right served.</small>
     </div>
   </footer>
