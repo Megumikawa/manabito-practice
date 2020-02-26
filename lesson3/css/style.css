@@ -76,7 +76,7 @@ main {
 main h1 {
   background-image: url(../images/h1_top.png), url(../images/h1_bottom.png);
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  background-position: top left, bottom left;
   font-size: 2.6rem;
   margin-top: 0;
   padding: 28px 0;
@@ -203,7 +203,7 @@ WORKS
   list-style: none;
   justify-content: space-between;
 }
-.gallery-pic li {
+.gallery-pic ul li {
   margin-bottom: 18px;
   width: 290px;
 }
@@ -233,4 +233,102 @@ textarea {
   overflow-y: scroll;
   height: 144px;
   width: 306px;
+}
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:767px) {
+
+  body, header, footer, main, .global-nav, .container, .sub {
+    width: 100%;
+  }
+  /* 基本ページ　--base-- */
+  .global-nav ul {
+    flex-wrap: wrap;
+  }
+  .global-nav ul li {
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+  }
+  .breadcrumb {
+    margin: 0 2%;
+    width: 96%;
+  }
+  .container {
+    display: block;
+  }
+  main h1 {
+    width: 96%;
+  }
+  .pagetop {
+    margin-right: 2%;
+  }
+  .footer-info p {
+    font-size: 1.2rem;
+  }
+  /* ホーム画面--index-- */
+  .slider {
+    width: 100%;
+  }
+  .slider img {
+    height: auto;
+  }
+  .topics ul li {
+    margin: 0 2%;
+    flex-wrap: wrap;
+  }
+  .topics time {
+    margin: 0 0 2%;
+  }
+  .sub {
+    margin: 16% 0 0;
+  }
+  /* 展覧会について--exhibition--*/
+  .introduction {
+    display: block;
+    margin: 0 2%;
+  }
+  .introduction img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 4%;
+  }
+  /* スケジュール　--schedule-- */
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  .container table {
+    width: 610px;
+    margin: 0 2%;
+    overflow-x: scroll;
+  }
+  /* 作品紹介--works-- */
+  .gallery p {
+    margin: 0 2% 4%;
+  }
+  .gallery-pic {
+    margin: 0 2%;
+  }
+
+  .gallery-pic li {
+    width: 48%;
+    height: auto;
+    max-width: 290px;
+  }
+  .gallery-pic img {
+    width: 100%;
+    height: auto;
+  }
+  /* 前売り券申し込み　--tickets-- */
+  .form-guide p {
+    margin: 0 2% 4%;
+  }
+  .form-guide ol li {
+    margin-bottom: 2%;
+  }
+  form {
+    margin: 0 4%;
+  }
 }
