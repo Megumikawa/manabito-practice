@@ -51,14 +51,12 @@ header, .container, main, .sub, .pagetop, footer {
 .gnav ul li:last-child {
   border-radius: 0 5px 5px 0;
 }
-.gnav ul li a {
-  height: 100%;
-  display: block;
+.gnav a {
   color: #fff;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   text-decoration: none;
 }
-.gnav ul li a:hover {
+.gnav a:hover {
   opacity: .5;
 }
 .breadcrumb ol {
