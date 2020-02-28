@@ -32,8 +32,7 @@ header, .container, main, .sub, .pagetop, footer {
 }
 .gnav ul li {
   background-color: #473916;
-  border: 1px solid #000;
-  padding: 10px;
+  border: 1px solid;
   text-align: center;
   width: 210px;
 }
@@ -52,10 +51,11 @@ header, .container, main, .sub, .pagetop, footer {
   border-radius: 0 5px 5px 0;
 }
 .gnav ul li a {
-  height: 100%;
   display: block;
   color: #fff;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  height: 100%;
+  line-height: 42px;
   text-decoration: none;
 }
 .gnav ul li a:hover {
