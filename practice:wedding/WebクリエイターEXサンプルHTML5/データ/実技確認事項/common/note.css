@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+/************* common parts **************/
+/*--------- common ---------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+}
+body * {
+	font-size: 100%;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+header {
+	border-bottom: 1px solid #ddd;
+}
+p.q_lead {
+	font-weight: bold;
+}
+/*--------- h1 ---------*/
+header h1 {
+	margin: 0;
+	padding: 0.3em 0.5em;
+	background-color: #0F0F0F;
+	border-bottom: 1px solid #555656;
+	font-size: 87.5%;
+	color: #F5F5F5;
+}
+/************* note **************/
+#note #note_box {
+	margin: 0.6em;
+}
+#note h2 {
+	margin-bottom: 0;
+	padding: 0.2em;
+	font-size: 200%;
+	color: #000;
+	background-color: #ffffff;
+}
+#note p {
+    margin: 0.5em 0 0.5em 1em;
+}
+#note ol li {
+    margin-bottom: 0.5em;
+}
+#note ol li table {
+	border-collapse: collapse;
+}
+#note ol li table th,
+#note ol li table td {
+	padding: 0;
+	border-width: 0;
+}
+#note ol li table th {
+    font-weight: normal;
+	text-align: left;
+}
+#note ol li table td {
+	text-align: right;
+}
+#note ol li img {
+    margin-top: 0.5em;
+}
+#note p.asterisk {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+#note img[src="../img/instructions.jpg"] {
+    padding-left: 1.8em;
+}
+#note #copyright {
+	margin: 0;
+	padding: 0.5em;
+	clear: both;
+	background-color: #f5f5f5;
+	color: #4D4D4D;
+	font-size: 87.5%;
+	text-align: center;
+}
+#note footer {
+	margin-top: 3em;
+}
+/************* print **************/
+@media print {
+	.print {
+		page-break-before: always !important;
+	}
+}
