@@ -15,7 +15,9 @@ header, .container, main, .sub, .pagetop, footer {
   margin: 0;
   padding: 0;
 }
-
+a {
+  color: #594b37;
+}
 /* -----base----- */
 header, .container, main, .sub, .pagetop, footer {
   margin: 0 auto;
@@ -70,6 +72,9 @@ header, .container, main, .sub, .pagetop, footer {
 .breadcrumb ol li:not(:last-child):after {
   content: url(../images/breadcrumb_arrow.png);
   margin: 0 12px;
+}
+.breadcrumb a:hover {
+  opacity: .5;
 }
 .inner-container {
   display: flex;
