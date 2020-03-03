@@ -5,8 +5,9 @@ html {
 }
 body {
   background: #f2f2e8;
-  font-size: 1.6rem;
   color: #594b37;
+  font-size: 1.6rem;
+  margin: 0;
 }
 * {
   box-sizing: border-box;
@@ -25,7 +26,7 @@ header, .container, main, .sub, .pagetop, footer {
 }
 .toplogo {
   text-align: center;
-  margin: 0 0 26px;
+  margin: 26px 0;
 }
 .gnav ul {
   display: flex;
@@ -55,7 +56,6 @@ header, .container, main, .sub, .pagetop, footer {
 .gnav ul li a {
   display: block;
   color: #fff;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   height: 100%;
   line-height: 42px;
   text-decoration: none;
@@ -79,12 +79,15 @@ header, .container, main, .sub, .pagetop, footer {
 .inner-container {
   display: flex;
 }
+main {
+  margin-right: 40px;
+}
 main h1 {
   border-top: 4px double;
   border-bottom: 4px double;
   padding: 18px 0 18px 58px;
   position: relative;
-  margin: 0 40px 0 0;
+  margin: 0 0 34px 0;
 }
 main h1::before {
   content: url(../images/h1-icon.png);
@@ -140,6 +143,140 @@ main h1::before {
   display: none;
 }
 
+/* -----インデックス--index----- */
+
+main h2 {
+  background-image: url(../images/bg_h2_head.png);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #c0c0c0;
+  line-height: 50px;
+  padding: 0 0 0 20px;
+  margin: 10px 0 10px 0;
+}
+.noticed {
+  list-style: none;
+  padding: 0;
+  margin-right: 30px;
+}
+.noticed li {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dashed;
+}
+.noticed time {
+  font-weight: bold;
+  width: 170px;
+}
+.noticed p {
+  margin: 0;
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+}
+
+/* -----結婚式場のコンセプト--concept----- */
+.concept-photo1 {
+  margin-bottom: 36px;
+}
+.concept-photo1 img {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+.concept-photo2 img {
+  float: left;
+  margin: 0 30px 0 0;
+}
+.concept-photo2::after {
+  clear:both;
+}
+
+/* -----プランのご案内--plan----- */
+.plan-caption span {
+  font-weight: bold;
+}
+.plan-caption p {
+  margin: 0 0 34px;
+}
+.plan-table table {
+  border-collapse: collapse;
+}
+.plan-table table th, .plan-table  table td {
+  border: 1px solid;
+}
+.plan-table table thead {
+  background-color: #eee9cc;
+}
+.plan-table table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.plan-table table tbody tr:nth-child(even) {
+  background-color: #f3f2f0;
+}
+.plan-table table th {
+  padding: 16px 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+.plan-table tbody td:first-child {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+.plan-table tbody td:last-child {
+  padding: 14px 30px 14px 12px;
+  font-size: 1.5rem;
+}
+
+/* -----ブライダルフェア--bridalfair----- */
+.bridal-gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 20px;
+}
+.bridal-gallery ul li {
+  width: 180px;
+}
+.bridal-gallery ul li p {
+  font-size: 1.4rem;
+  margin: 0 0 26px;
+}
+
+/* -----お問い合わせ--contact----- */
+.contact-table form table {
+  border-collapse: collapse;
+}
+.contact-table table th {
+  background-color: #eee9cc;
+  border: 1px solid;
+  padding: 20px 12px;
+  text-align: left;
+  width: 200px;
+}
+.contact-table table td {
+  border: 1px solid;
+  padding: 10px;
+  width: 370px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 240px;
+}
+input[type="radio"]:last-child {
+  margin-left: 26px;
+}
+textarea {
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+}
+input, textarea {
+  font-size: 1.6rem;
+}
 
 
 
@@ -167,6 +304,9 @@ main h1::before {
   .gnav ul li:last-child {
     border-radius: 0;
   }
+  .gnav ul li {
+    border: 1px solid #000;
+  }
   .gnav ul li:nth-child(2) {
     border: 1px solid #000;
   }
@@ -193,7 +333,7 @@ main h1::before {
   main h1 {
     font-size: 2.4rem;
     padding: 4% 2% 4% 16%;
-    margin: 0 2%;
+    margin: 4% 0;
   }
   .sub {
     text-align: center;
@@ -208,5 +348,90 @@ main h1::before {
   .footer-info {
     display: block;
   }
+  /* -----インデックス--index----- */
+  .slider {
+    width: 100%;
+  }
+  .slider img {
+    height: auto;
+  }
+  .inner-container {
+    margin: 0 2%;
+  }
+  main h2 {
+    font-size: 2rem;
+    margin: 6% 0 4%;
+  }
+  .noticed {
+    margin: 0;
+  }
+  .noticed li {
+    display: block;
+    width: 100%;
+  }
+  .noticed p {
+    margin: 2% 0;
+  }
+  /* -----結婚式場のコンセプト--concept----- */
+  .concept-photo1 img, .concept-photo2 img {
+    float: none;
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .concept-photo1 p, .concept-photo2 p {
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+  }
+
+  /* -----プランのご案内--plan----- */
+  .plan-caption {
+    width: 100%;
+  }
+  .plan-table {
+    overflow-x: scroll;
+  }
+  .plan-table table {
+    width: 700px;
+  }
+
+  /* -----ブライダルフェア--bridalfair----- */
+  .bridal-gallery ul li {
+    width: 48%;
+    height: auto;
+    max-width: 180px;
+  }
+  .bridal-gallery ul li img {
+    width: 100%;
+    height: auto;
+  }
+
+/* -----お問い合わせ--contact----- */
+  .contact-caption ul {
+    margin: 10% 0;
+  }
+  .contact-table table {
+    margin: 0 2%;
+    text-align: left;
+    width: 96%;
+  }
+  .contact-table table th {
+    border: none;
+    border-radius: 5%;
+    display: block;
+    padding: 2% 4%;
+    width: 100%;
+  }
+  .contact-table table td {
+    border: none;
+    display: block;
+    padding: 4%;
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
 
 }
