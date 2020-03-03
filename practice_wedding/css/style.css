@@ -85,6 +85,7 @@ main {
 main h1 {
   border-top: 4px double;
   border-bottom: 4px double;
+  font-size: 3rem;
   padding: 18px 0 18px 58px;
   position: relative;
   margin: 0 0 34px 0;
