@@ -1,8 +1,8 @@
 $(function(){
-  'usestrict';
+  'use strict';
 
   $('#slider').bxSlider({
-  auto: true,
+    auto: true,
   });
 
   $('#pagetop').on('click',function(){

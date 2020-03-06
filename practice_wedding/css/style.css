@@ -38,6 +38,8 @@ header, .breadcrumb, .inner-container, main, .sub, .pagetop, footer {
 .gnav ul li {
   background-color: #473916;
   font-family: serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
   position: relative;
   text-align: center;
   width: 210px;
@@ -54,10 +56,12 @@ header, .breadcrumb, .inner-container, main, .sub, .pagetop, footer {
   background: linear-gradient(to bottom, #8f896f, #fff 30%, #8f896f 90%);
   z-index: 1;
 }
-.gnav li:first-child {
+.gnav li:first-child,
+.gnav li:first-child a {
   border-radius: 5px 0 0 5px;
 }
-.gnav li:last-child {
+.gnav li:last-child,
+.gnav li:last-child a {
   border-radius: 0 5px 5px 0;
 }
 .gnav ul li a {
@@ -66,6 +70,11 @@ header, .breadcrumb, .inner-container, main, .sub, .pagetop, footer {
   height: 100%;
   line-height: 42px;
   text-decoration: none;
+}
+.gnav ul li.current-page,
+.gnav ul li.current-page a {
+  background: radial-gradient(#dfdcc4, #cfcaa4);
+  color: #594b37;
 }
 .breadcrumb ol {
   display: flex;
@@ -84,23 +93,23 @@ main {
   margin-right: 40px;
 }
 .h1-outer {
-  border-top: 4px solid #cdc6ac;
-  border-bottom: 4px solid #cdc6ac;
-  padding: 4px 0;
-  margin: 6px 0 26px;
-}
-main h1 {
   border-top: 2px solid #cdc6ac;
   border-bottom: 2px solid #cdc6ac;
+  padding: 2px 0;
+  margin: 6px 0 28px;
+}
+main h1 {
+  border-top: 1px solid #cdc6ac;
+  border-bottom: 1px solid #cdc6ac;
   font-size: 2.6rem;
-  padding: 22px 0 22px 58px;
+  padding: 34px 0 38px 58px;
   position: relative;
   margin: 0;
 }
 main h1::before {
   content: url(../images/h1-icon.png);
   position: absolute;
-  top: 12px;
+  top: 20px;
   left: 10px;
 }
 .sub {
@@ -136,16 +145,16 @@ main h1::before {
   padding: 10px 0 0;
   border-bottom: 1px solid #ccc;
 }
-
 .footer-foot {
   border-top: 1px solid #fff;
   clear: both;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 6px;
 }
-address{
+address {
   font-style: normal;
-  margin: 20px 0 10px;
+  margin: 14px 0 2px;
 }
 .footer-info {
   display: none;
@@ -161,8 +170,7 @@ address{
   padding: 0;
 }
 main h2 {
-  background-image: url(../images/bg_h2_head.png);
-  background-repeat: no-repeat;
+  background: url(../images/bg_h2_head.png) no-repeat left top ;
   border-bottom: 1px solid #c0c0c0;
   font-size: 2rem;
   line-height: 2.7;
@@ -186,6 +194,7 @@ main h2 {
 }
 .noticed time {
   font-weight: bold;
+  font-size: 1.4rem;
   width: 170px;
 }
 .noticed p {
@@ -194,10 +203,6 @@ main h2 {
 }
 
 /* -----結婚式場のコンセプト--concept----- */
-.gnav-concept a {
-  background-color: #d7d2b4;
-  border-radius: 5px 0 0 5px;
-}
 .concept-photo1 {
   margin-bottom: 36px;
 }
@@ -209,14 +214,15 @@ main h2 {
   float: left;
   margin: 0 30px 0 0;
 }
+.concept-photo1::after,
 .concept-photo2::after {
-  clear:both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
+
 /* -----プランのご案内--plan----- */
-.gnav-plan a {
-  background-color: #d7d2b4;
-}
 .plan-caption h3{
   font-weight: bold;
   font-size: 1.7rem;
@@ -256,9 +262,6 @@ main h2 {
 }
 
 /* -----ブライダルフェア--bridalfair----- */
-.gnav-bridalfair a {
-  background-color: #d7d2b4;
-}
 .bridal-gallery ul {
   display: flex;
   flex-wrap: wrap;
@@ -279,10 +282,6 @@ main h2 {
 }
 
 /* -----お問い合わせ--contact----- */
-.gnav-contact a {
-  background-color: #d7d2b4;
-  border-radius: 0 5px 5px 0;
-}
 .contact-caption p {
   margin: 26px 0;
 }
@@ -327,17 +326,11 @@ input, textarea {
 
 /* ---------レスポンシブ----- */
 @media screen and (min-width:768px) {
-  .gnav ul li a:hover {
-    opacity: .5;
-  }
-  .breadcrumb a:hover {
-    opacity: .5;
-  }
-  .sub ul li a:hover {
-    opacity: .5;
-  }
+  .gnav ul li a:hover,
+  .breadcrumb a:hover,
+  .sub ul li a:hover,
   .footer-head p:hover {
-    opacity:.5;
+    opacity: .5;
   }
 
 }
@@ -357,10 +350,6 @@ input, textarea {
     padding: 0;
     width: 100%;
   }
-  .gnav ul li:first-child,
-  .gnav ul li:last-child {
-    border-radius: 0;
-  }
   .gnav li:not(:last-child)::after {
     display: none;
   }
@@ -369,6 +358,12 @@ input, textarea {
   }
   .gnav ul li:not(:last-child) {
     border-bottom: none;
+  }
+  .gnav li:first-child,
+  .gnav li:first-child a,
+  .gnav li:last-child,
+  .gnav li:last-child a {
+    border-radius: 0;
   }
   .breadcrumb {
     margin: 0 2%;
@@ -426,12 +421,9 @@ input, textarea {
   }
   .noticed p {
     margin: 2% 0;
-      width: 100%;
+    width: 100%;
   }
   /* -----結婚式場のコンセプト--concept----- */
-  .gnav-concept a {
-    border-radius: 0;
-  }
   .concept-photo1 img, .concept-photo2 img {
     float: none;
     height: auto;
@@ -462,13 +454,10 @@ input, textarea {
   }
   .bridal-gallery ul li img {
     height: auto;
-      width: 100%;
+    width: 100%;
   }
 
 /* -----お問い合わせ--contact----- */
-.gnav-contact a {
-  border-radius: 0;
-}
   .contact-caption ul {
     margin: 10% 0;
   }
