@@ -223,10 +223,14 @@ main h2 {
 
 
 /* -----プランのご案内--plan----- */
-.plan-caption h3{
+.plan-caption h2 {
   font-weight: bold;
   font-size: 1.7rem;
   margin: 28px 0 0;
+  background: none;
+  border-bottom: none;
+  padding: 0;
+  line-height: 1;
 }
 .plan-caption p {
   margin: 6px 0 34px;
