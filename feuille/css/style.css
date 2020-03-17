@@ -33,6 +33,8 @@ a {
   z-index: 10000;
   margin: 0 2%;
   width: 96%;
+  overflow-y: scroll;
+  height: 100%;
 }
 .hamburger-header {
   display: flex;
@@ -142,22 +144,24 @@ a {
   margin: 0 2%;
   width: 3%;
 }
+
 /* ----------ハンバーガーメニュー終わり---------- */
+
 
 @media screen and (max-width:767px) {
   body {
     font-size: 1.3rem;
   }
-  .header, h3 {
+  .sp-header, h3 {
     margin: 0;
     width: 100%;
   }
-  .header {
+  .sp-header {
     display: flex;
     justify-content: space-between;
   }
   .btn-menu {
-    padding: 4% 2%;
+    padding: 6% 2%;
     width: 30%;
   }
   .logo {
@@ -211,7 +215,6 @@ a {
     width: 15px;
   }
   /* ---bxslider--- */
-
   .news-block {
     margin: 4% 2% 8%;
   }
@@ -223,7 +226,7 @@ a {
     text-decoration: underline;
     white-space: nowrap;
   }
-  .section-block {
+   .section-block {
     margin: 20% 2%;
     padding-bottom: 10%;
     border-bottom: 1px solid #eee;

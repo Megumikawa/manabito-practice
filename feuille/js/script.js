@@ -5,7 +5,7 @@ $(function(){
   const MENUSPEED = 300;
 
   $('#top-slider').bxSlider({
-    auto: true,
+    auto: true
   });
 
   $('#pagetop').on('click',function(){
@@ -16,9 +16,16 @@ $(function(){
 
   // if(menuContents.length > 0) {
     $('#js-btn-menu').on('click',function(){
+      //$('#js-container').addClass('class名');
+
+      $('html').css({
+        'overflow':'hidden'
+      });
+
       menuContents.fadeIn(MENUSPEED);
     });
     $('.js-btn-close').on('click',function(){
+      $('html').css('overflow','');
       menuContents.fadeOut(MENUSPEED);
     });
   // }
