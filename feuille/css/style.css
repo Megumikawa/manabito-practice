@@ -152,7 +152,8 @@ ul, ol {
     margin: 0 auto;
   }
   .btn-menu,
-  .header-nav {
+  .header-nav,
+  .sp-top-slider {
     display: none;
   }
   .header {
@@ -189,6 +190,7 @@ ul, ol {
   .pc-nav-block ul {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
   }
   .pc-nav-block img {
     margin: 0 10px;
@@ -220,7 +222,7 @@ ul, ol {
   }
   #searchbox {
     border: none;
-    
+
   }
   #submit {
     border: none;
@@ -240,7 +242,8 @@ ul, ol {
     font-size: 1.3rem;
   }
   .pc-global-menu,
-  .pc-header-nav {
+  .pc-header-nav,
+  .pc-top-slider {
     display: none;
   }
   .header, h3 {
@@ -347,6 +350,9 @@ ul, ol {
   .product-name {
     font-weight: 300;
     margin: 2% 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .product-price {
     font-size: 1.2rem;
@@ -426,11 +432,10 @@ ul, ol {
     margin: 0 2%;
     text-align: right;
   }
-  .footer {
+  footer {
     background-color: #6d6155;
     color: #fff;
     font-size: 1.2rem;
-    margin: 2%;
     padding: 2% 0 6%;
     text-align: center;
   }
