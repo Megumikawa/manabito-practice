@@ -17,14 +17,19 @@ $(function(){
   // if(menuContents.length > 0) {
     $('#js-btn-menu').on('click',function(){
       //$('#js-container').addClass('class名');
-
-      $('html').css({
-        'overflow':'hidden'
-      });
-
-      menuContents.fadeIn(MENUSPEED);
+      if ($(this).hasClass('open') ===true) {
+        $(this).removeClass('open');
+        $('html').css('overflow','');
+        menuContents.fadeOut(MENUSPEED);
+      } else {
+        $(this).addClass('open');
+        $('html').css('overflow','hidden');
+        menuContents.fadeIn(MENUSPEED);
+      }
     });
+
     $('.js-btn-close').on('click',function(){
+      $('#js-btn-menu').removeClass('open');
       $('html').css('overflow','');
       menuContents.fadeOut(MENUSPEED);
     });
