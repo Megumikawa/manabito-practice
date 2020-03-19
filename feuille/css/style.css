@@ -48,31 +48,6 @@ ul, ol {
 .open .btn-menu-open {
   display: none;
 }
-.hamburger-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4%;
-}
-.hamburger-logo {
-  margin: 0 20% 0 34%;
-}
-.hamburger-search {
-  margin: 2%;
-}
-.hamburger-cart {
-  position: relative;
-  margin: 2%;
-}
-.hb-cart-counter {
-  background-color: #cb001d;
-  border: 1px solid #cb001d;
-  border-radius: 50%;
-  color: #fff;
-  padding: 0 16%;
-  position: absolute;
-  left: 65%;
-  bottom: 50%;
-}
 .hamburger-title-block {
   color: #333;
   margin: 8% 0 1%;
@@ -162,7 +137,8 @@ ul, ol {
   }
   .btn-menu,
   .header-nav,
-  .sp-top-slider {
+  .sp-top-slider,
+  .top-slider .sp-top-slider {
     display: none;
   }
   .header {
@@ -251,7 +227,8 @@ ul, ol {
   }
   .pc-global-menu,
   .pc-header-nav,
-  .pc-top-slider {
+  .pc-top-slider,
+  .top-slider .pc-top-slider {
     display: none;
   }
   .header, h3 {
@@ -328,6 +305,8 @@ ul, ol {
     margin-bottom: 4%;
     text-decoration: underline;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
    .section-block {
     margin: 20% 2%;
