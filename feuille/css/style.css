@@ -25,7 +25,25 @@ a {
 ul, ol {
   list-style: none;
 }
-/* -----------ハンバーガーメニュ------------*/
+/* ---------- bxslider ---------- */
+.bx-wrapper .bx-prev {
+  background: url(../images/swiper-left-arrow.svg) no-repeat left top;
+  background-size: contain;
+}
+.bx-wrapper .bx-next {
+  background: url(../images/swiper-right-arrow.svg) no-repeat right top;
+  background-size: contain;
+}
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  height: 20px;
+  width: 15px;
+}
+/* ---------- bxslider ---------- */
+
+/* ----------- ハンバーガーメニュ ------------*/
 .hamburger-container {
   background-color: #fff;
   color: #5f5f5f;
@@ -274,27 +292,10 @@ ul, ol {
     bottom: 50%;
   }
 
-/* ---bxslider--- */
   .sp-top-slider {
     width: 100%;
     height: auto;
   }
-  .bx-wrapper .bx-prev {
-    background: url(../images/swiper-left-arrow.svg) no-repeat left top;
-    background-size: contain;
-  }
-  .bx-wrapper .bx-next {
-    background: url(../images/swiper-right-arrow.svg) no-repeat right top;
-    background-size: contain;
-  }
-  .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
-    background-position: 0 0;
-  }
-  .bx-wrapper .bx-controls-direction a {
-    height: 20px;
-    width: 15px;
-  }
-  /* ---bxslider--- */
   .news-block {
     margin: 4% 2% 8%;
   }
