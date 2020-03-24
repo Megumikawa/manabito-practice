@@ -32,8 +32,8 @@ ul, ol {
   left: 0;
   z-index: 10000;
   width: 100%;
-  height: 12%;
-  padding-top: 2%;
+  height: 10%;
+  padding-top: 1%;
   box-shadow: 0 2px 6px 8px #fff;
 }
 .container {
@@ -154,14 +154,13 @@ ul, ol {
   font-weight: bold;
   padding: 6% 0;
 }
+.hamburger-main-menu li:last-child {
+  border-top: 1px solid #eee;
+  margin: 0;
+}
 .hamburger-category-child {
   display: none;
-}
-
-.hamburger-search-category li:last-child {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  margin: 4% 0;
+  margin-top: 5%;
 }
 .hamburger-category-child img {
   margin-right: 2%;
@@ -171,6 +170,8 @@ ul, ol {
 .hamburger-footer-menu {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding-top: 4%;
 }
 .hamburger-footer-menu li {
   margin-right: 6%;

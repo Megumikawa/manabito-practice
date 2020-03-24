@@ -31,6 +31,10 @@ $(function(){
       }
     });
 
+    $('#js_hamburger_search_category').on('click',function(){
+      $('.hamburger-category-child').fadeToggle(MENUSPEED);
+    });
+
 
     $('.js-btn-close').on('click',function(){
       $('#js_btn_menu').removeClass('open');
