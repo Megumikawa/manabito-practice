@@ -34,6 +34,7 @@ ul, ol {
   width: 100%;
   height: 12%;
   padding-top: 2%;
+  box-shadow: 0 2px 6px 8px #fff;
 }
 .container {
   padding-top: 8%;
@@ -106,7 +107,7 @@ ul, ol {
   top: 60px;
   left: 0;
   z-index: 10000;
-  padding: 0 2% 10%;
+  padding: 0 2% 20%;
   width: 100%;
   overflow-y: scroll;
   height: 100%;
@@ -153,25 +154,33 @@ ul, ol {
   font-weight: bold;
   padding: 6% 0;
 }
-.hamburger-main-menu li:last-child {
+.hamburger-category-child {
+  display: none;
+}
+
+.hamburger-search-category li:last-child {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: 4% 0;
 }
-.hamburger-main-menu img {
+.hamburger-category-child img {
   margin-right: 2%;
   height: auto;
   width: 2%;
 }
 .hamburger-footer-menu {
-  margin: 6% 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .hamburger-footer-menu li {
-  margin: 2% 0;
+  margin-right: 6%;
 }
-.hamburger-footer-menu li a:not(:last-child)::after {
+.hamburger-footer-menu a {
+  white-space: nowrap;
+}
+.hamburger-footer-menu li a::after {
   content: '/';
-  margin: 0 2%;
+  margin: 0 4% 0 10%;
 }
 .hamburger-sns-block {
   border-top: 1px solid #eee;
@@ -243,7 +252,6 @@ ul, ol {
   .header {
     display: flex;
     justify-content: space-between;
-    /* margin: 20px auto; */
   }
   .logo {
     margin-right: 20px;

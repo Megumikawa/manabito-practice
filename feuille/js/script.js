@@ -31,7 +31,8 @@ $(function(){
       }
     });
 
-    $('.js_btn_close').on('click',function(){
+
+    $('.js-btn-close').on('click',function(){
       $('#js_btn_menu').removeClass('open');
       $('html').css('overflow','');
       menuContents.fadeOut(MENUSPEED);

@@ -70,30 +70,39 @@
         <ul class="hamburger-main-menu">
           <li><a href="#">ログイン</a></li>
           <li><a href="#">新規会員登録</a></li>
-          <li><a href="#">カテゴリーから探す</a></li>
-          <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
-          <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
-          <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+          <li id="js_hamburger_search_category">
+            <a href="#">カテゴリーから探す</a>
+            <ul id="js_humburger_category_child" class="hamburger-category-child">
+              <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+              <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+              <li><a href="#"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="hamburger-footer">
         <ul class="hamburger-footer-menu">
-          <li><a href="#">新着情報</a><a href="#">ショッピングガイド</a><a href="#">新着アイテム</a></li>
-          <li><a href="#">ショッピングカート</a><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">特定商取引に基づく表示</a><a href="#">会社概要</a></li>
-          <li><a href="#">よくあるご質問</a><a href="#">お問い合わせ</a></li>
+          <li><a href="#">新着情報</a></li>
+          <li><a href="#">ショッピングガイド</a></li>
+          <li><a href="#">新着アイテム</a></li>
+          <li><a href="#">ショッピングカート</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">特定商取引に基づく表示</a>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">よくあるご質問</a>
+          <li><a href="#">お問い合わせ</a></li>
         </ul>
         <ul class="hamburger-sns-block">
           <li><a href="#"><img src="images/sp/hamburger-instagram.svg" alt="インスタグラムへアクセスする" width="57" height="57"></a></li>
           <li><a href="#"><img src="images/sp/hamburger-twitter.svg" alt="ツイッターへアクセスする" width="71" height="57"></a></li>
           <li><a href="#"><img src="images/sp/hamburger-facebook.svg" alt="フェイスブックへアクセスする" width="57" height="57"></a></li>
         </ul>
-        <p class="js_btn_close"><img src="images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">閉じる</p>
+        <p class="js-btn-close"><img src="images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">閉じる</p>
       </div>
     </div>
     <!--ハンバーガーメニュー終わり ------->
 
-    <div class="container">
+    <main>
       <div class="top-slider-wrapper">
         <div class="top-slider">
           <ul id="top_slider">
@@ -117,7 +126,7 @@
           <li>
             <img src="images/new-item01.jpg" alt="スエードタッセルピアス" width="220" height="220">
             <h3 class="product-name">スエードタッセルとゴールドプレートピアス</h3>
-            <P class="product-price">¥00,000</p>
+            <p class="product-price">¥00,000</p>
           </li>
           <li>
             <img src="images/new-item02.jpg" alt="スエードタッセルピアス" width="220" height="220">
@@ -254,7 +263,7 @@
           <li><img src="images/bnr-img02.jpg" alt="クリアチェーンピアス" width="240" height="80"></li>
         </ul>
       </section>
-    </div>
+    </main>
     <div id="pagetop" class="pagetop"><img src="images/pagetop.svg" alt="ページトップ" width="35" height="35"></div>
 
     <footer>
