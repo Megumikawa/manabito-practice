@@ -198,7 +198,7 @@ ul, ol {
     font-size: 1.4rem;
   }
   .header, .top-slider, .news-block, .section-new-item, .section-pickup-item, .section-ranking,
-  .section-banner-block, footer {
+  .section-banner-block, .footer-nav-wrap, .footer-access-guide {
     width: 1000px;
     margin: 0 auto;
   }
