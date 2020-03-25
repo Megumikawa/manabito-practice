@@ -20,27 +20,41 @@ $(function(){
   // if(menuContents.length > 0) {
     $('#js_btn_menu').on('click',function(){
       //$('#js-container').addClass('class名');
-      if ($(this).hasClass('open') ===true) {
-        $(this).removeClass('open');
-        $('html').css('overflow','');
-        menuContents.fadeOut(MENUSPEED);
-      } else {
-        $(this).addClass('open');
-        $('html').css('overflow','hidden');
-        menuContents.fadeIn(MENUSPEED);
+      if (menuContents.is(':animated') === false) {
+        // $('html').toggleClass('open');
+        // menuContents.fadeToggle(MENUSPEED);
+        if ($(this).hasClass('open') ===true) {
+          $(this).removeClass('open');
+          $('html').css('overflow','');
+          menuContents.fadeOut(MENUSPEED);
+        } else {
+          $(this).addClass('open');
+          $('html').css('overflow','hidden');
+          menuContents.fadeIn(MENUSPEED);
+        }
       }
     });
+        $('.js-btn-close').on('click',function(){
+          $('html').removeClass('open');
+          // $('#js_btn_menu').removeClass('open');
+          // $('html').css('overflow','');
+          menuContents.fadeOut(MENUSPEED);
+        });
+      // }
+
 
     $('#js_hamburger_search_category').on('click',function(){
-      $('.hamburger-category-child').fadeToggle(MENUSPEED);
+      if ($('.hamburger-category-child').is(':animated') ===false){
+        if ($(this).hasClass('category-open') ===false) {
+          $(this).addClass('category-open');
+        } else {
+          $(this).removeClass('category-open');
+        }
+        $('.hamburger-category-child').fadeToggle(MENUSPEED);
+      }
+
     });
 
 
-    $('.js-btn-close').on('click',function(){
-      $('#js_btn_menu').removeClass('open');
-      $('html').css('overflow','');
-      menuContents.fadeOut(MENUSPEED);
-    });
-  // }
 
 });

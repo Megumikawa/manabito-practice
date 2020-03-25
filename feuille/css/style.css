@@ -107,13 +107,16 @@ ul, ol {
   top: 60px;
   left: 0;
   z-index: 10000;
-  padding: 0 2% 20%;
+  padding: 0 4% 20%;
   width: 100%;
   overflow-y: scroll;
   height: 100%;
 }
 .btn-menu-close {
   display: none;
+}
+html.open {
+  overflow: hidden;
 }
 .open .btn-menu-close {
   display: block;
@@ -152,15 +155,25 @@ ul, ol {
 .hamburger-main-menu li {
   border-top: 1px solid #eee;
   font-weight: bold;
-  padding: 6% 0;
 }
 .hamburger-main-menu li:last-child {
   border-top: 1px solid #eee;
   margin: 0;
 }
+.hamburger-main-menu li > a {
+  display: block;
+  padding: 6% 0;
+}
+.hamburger-search-category > a {
+  background: url(../images/sp/plus.png) no-repeat right 20px center;
+  background-size: 10px 10px;
+}
+.category-open > a {
+  background-image: url(../images/sp/minus.png);
+  background-size: 10px 2px;
+}
 .hamburger-category-child {
   display: none;
-  margin-top: 5%;
 }
 .hamburger-category-child img {
   margin-right: 2%;
