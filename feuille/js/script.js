@@ -34,12 +34,12 @@ $(function(){
         }
       }
     });
-        $('.js-btn-close').on('click',function(){
-          $('html').removeClass('open');
-          // $('#js_btn_menu').removeClass('open');
-          // $('html').css('overflow','');
-          menuContents.fadeOut(MENUSPEED);
-        });
+    $('.js-btn-close').on('click',function(){
+      $('#js_btn_menu').removeClass('open');
+      // $('#js_btn_menu').removeClass('open');
+      $('html').css('overflow','');
+      menuContents.fadeOut(MENUSPEED);
+    });
       // }
 
 

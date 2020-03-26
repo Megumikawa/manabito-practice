@@ -314,7 +314,7 @@ html.open {
     left: 65%;
     bottom: 50%;
   }
-  #search_form {
+  .pc-search-block {
     height: 20px;
     border: 1px #bbb solid;
     border-radius: 10px;
@@ -372,6 +372,7 @@ html.open {
     margin: 10px 0;
     font-size: 1.4rem;
     font-weight: normal;
+    min-height: 2.8rem;
   }
   .product-price {
     font-weight: bold;
@@ -598,10 +599,6 @@ html.open {
     margin-bottom: 10%;
     text-align: center;
   }
-  .product-item .product-name,
-  .product-item .product-name {
-    display: block;
-  }
   .product-item li:nth-child(n+7) {
     display: none;
   }
@@ -620,7 +617,7 @@ html.open {
   }
   .product-name {
     font-weight: 300;
-    margin: 2% 0;
+    margin: 2% 0 4%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -628,6 +625,7 @@ html.open {
   .product-price {
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 6%;
     text-align: center;
   }
   .btn-view-all {
@@ -684,13 +682,14 @@ html.open {
   }
   .footer-nav li {
     display: inline-block;
-    margin: 0 4% 4%;
+    margin: 0 2% 4% 0;
+    width: 36%;
   }
   .footer-shopping-nav li:not(:last-child)::after,
   .footer-customer-nav li:not(:last-child)::after,
   .footer-membership-nav li:not(:last-child)::after {
     content: '/';
-    margin: 0 16%;
+    margin: 0 0 0 10%;
   }
   .footer-nav a {
     color: #fff;
