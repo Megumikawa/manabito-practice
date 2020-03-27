@@ -536,7 +536,7 @@ html.open {
     justify-content: space-between;
   }
   .header-wrapper {
-    height: 11%;
+    height: auto;
   }
   main {
     margin-top: 15%;
