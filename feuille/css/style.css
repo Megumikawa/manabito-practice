@@ -123,6 +123,9 @@ html.open {
 }
 .open .btn-menu-close {
   display: block;
+  width: 20px;
+  height: 14px;
+  padding-left: 4%;
 }
 .open .btn-menu-open {
   display: none;
