@@ -535,9 +535,6 @@ html.open {
     display: flex;
     justify-content: space-between;
   }
-  .header-wrapper {
-    height: 12%;
-  }
   main {
     margin-top: 20%;
   }
