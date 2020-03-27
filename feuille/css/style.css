@@ -55,6 +55,7 @@ ul, ol {
 .bx-wrapper .bx-controls-direction a {
   height: 20px;
   width: 15px;
+  top: 58%;
 }
 /* ランキングカウンターの共通部分 */
 .item-ranking {
