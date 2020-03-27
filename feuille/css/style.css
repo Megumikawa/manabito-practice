@@ -40,7 +40,10 @@ ul, ol {
   padding-top: 8%;
 }
 main {
-  margin-top: 80px;
+  padding-top: 80px;
+}
+.tel {
+  color: #fff;
 }
 
 /* スライダーの共通部分 */
@@ -249,8 +252,9 @@ html.open {
     opacity: .7;
   }
   .top-slider-wrapper {
-    height: 460px;
+    height: 500px;
     overflow: hidden;
+    margin-bottom: 60px;
     min-width: 1000px;
     width: 100%;
   }
@@ -350,7 +354,7 @@ html.open {
   }
   .news-block {
     border: 1px solid #eee;
-    margin: 60px auto 80px;
+    margin: 0 auto 80px;
     padding: 30px;
   }
   .news-block dt {
@@ -539,10 +543,10 @@ html.open {
     justify-content: space-between;
   }
   .header-wrapper {
-    height: 60px;
+    height: 70px;
   }
   main {
-    margin-top: 18%;
+    padding-top: 15%;
   }
   .btn-menu {
     padding: 6% 2%;
@@ -694,14 +698,27 @@ html.open {
   }
   .footer-nav li {
     display: inline-block;
-    margin: 0 2% 4% 0;
-    width: 36%;
+    margin-bottom: 2%;
+    width: 34%;
   }
-  .footer-shopping-nav li:not(:last-child)::after,
-  .footer-customer-nav li:not(:last-child)::after,
-  .footer-membership-nav li:not(:last-child)::after {
+  .footer-customer-nav li {
+    width: 42%;
+  }
+  .footer-membership-nav li {
+    width: 38%;
+  }
+  .footer-shopping-nav li:not(:nth-child(even))::after {
     content: '/';
-    margin: 0 0 0 10%;
+    margin: 0 0 0 16%;
+  }
+  .footer-customer-nav li:nth-child(1)::after,
+  .footer-customer-nav li:nth-child(3)::after {
+    content: '/';
+    margin: 0 6% 0;
+  }
+  .footer-membership-nav li:first-child::after {
+    content: '/';
+    margin: 0 10% 0;
   }
   .footer-nav a {
     color: #fff;
@@ -711,6 +728,9 @@ html.open {
     display: flex;
     justify-content: center;
     margin-bottom: 12%;
+  }
+  .footer-sns-nav li {
+    width: 16%;
   }
   .footer-sns-nav img {
     height: auto;
