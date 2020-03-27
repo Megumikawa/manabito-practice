@@ -539,10 +539,10 @@ html.open {
     justify-content: space-between;
   }
   .header-wrapper {
-    height: auto;
+    height: 60px;
   }
   main {
-    margin-top: 15%;
+    margin-top: 18%;
   }
   .btn-menu {
     padding: 6% 2%;
