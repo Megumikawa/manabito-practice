@@ -535,8 +535,11 @@ html.open {
     display: flex;
     justify-content: space-between;
   }
+  .header-wrapper {
+    height: 9%;
+  }
   main {
-    margin-top: 20%;
+    margin-top: 15%;
   }
   .btn-menu {
     padding: 6% 2%;
@@ -549,6 +552,7 @@ html.open {
   }
   .header-nav {
     width: 30%;
+    padding-right: 2%;
   }
   .header-nav ul {
     display: flex;
