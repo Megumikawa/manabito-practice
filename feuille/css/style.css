@@ -110,7 +110,7 @@ main {
   color: #5f5f5f;
   display: none;
   position: fixed;
-  top: 60px;
+  top: 56px;
   left: 0;
   z-index: 10000;
   padding: 0 4% 20%;
@@ -547,7 +547,7 @@ html.open {
     padding: 10px 0 10px;
   }
   main {
-    padding-top: 52px;
+    padding-top: 56px;
   }
   .btn-menu {
     padding: 12px 0 12px 2%;
