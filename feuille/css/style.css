@@ -543,29 +543,24 @@ html.open {
     justify-content: space-between;
   }
   .header-wrapper {
-    height: 70px;
+    height: 52px;
+    padding: 2% 4% 0 0;
   }
   main {
-    padding-top: 15%;
+    padding-top: 12%;
   }
   .btn-menu {
-    padding: 6% 2%;
-    width: 30%;
-  }
-  .logo {
-    text-align: center;
-    padding: 2%;
-    width: 30%;
+    padding: 4% 0 4% 2%;
+    width: 20%;
   }
   .header-nav {
-    width: 30%;
-    padding-right: 2%;
+    width: 22%;
+    padding: 4% 8% 0 0;
   }
   .header-nav ul {
     display: flex;
     justify-content: space-between;
-    margin: 16% 10% 8%;
-    }
+  }
   .header-nav ul li {
     margin: 0 16%;
     width: 50%;
@@ -680,6 +675,9 @@ html.open {
     font-size: 1.2rem;
     padding: 2% 0 6%;
     text-align: center;
+  }
+  .footer-nav-wrap {
+    padding: 0 4%;
   }
   .title-footer-nav::before {
     content: '';
