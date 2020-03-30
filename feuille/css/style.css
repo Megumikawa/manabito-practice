@@ -547,7 +547,7 @@ html.open {
     padding: 10px 0 10px;
   }
   main {
-    padding-top: 50px;
+    padding-top: 56px;
   }
   .btn-menu {
     padding: 12px 0 12px 2%;
@@ -555,7 +555,7 @@ html.open {
   }
   .header-nav {
     width: 22%;
-    padding: 10px 4% 0 0;
+    padding: 10px 6% 0 0;
   }
   .header-nav ul {
     display: flex;
