@@ -543,11 +543,11 @@ html.open {
     justify-content: space-between;
   }
   .header-wrapper {
-    height: 52px;
-    padding: 12px 4% 0 0;
+    height: 58px;
+    padding: 10px 0 10px;
   }
   main {
-    padding-top: 36px;
+    padding-top: 50px;
   }
   .btn-menu {
     padding: 12px 0 12px 2%;
@@ -555,7 +555,7 @@ html.open {
   }
   .header-nav {
     width: 22%;
-    padding: 12px 8% 0 0;
+    padding: 10px 4% 0 0;
   }
   .header-nav ul {
     display: flex;
