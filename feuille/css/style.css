@@ -704,6 +704,9 @@ html.open {
   .footer-customer-nav li {
     width: 42%;
   }
+  .footer-customer-nav li:nth-child(n+3){
+    width: 30%;
+  }
   .footer-membership-nav li {
     width: 38%;
   }
@@ -711,7 +714,7 @@ html.open {
   .footer-customer-nav li:not(:last-child)::after,
   .footer-membership-nav li:not(:last-child)::after {
     content: '/';
-    margin: 0 4% 0;
+    margin: 0 6% 0;
   }
   .footer-nav a {
     color: #fff;
