@@ -88,12 +88,7 @@ $(function(){
     }
   });
 
-  $('#bottom_slider').bxSlider({
-    minSlides: 3,
-    maxSlides: 9,
-    slideWidth: 96,
-    slideMargin: 10,
-  });
+
 //pagerの部分
   let param = location.search;
   param = param.replace("?page=",""); //置換//
@@ -102,6 +97,25 @@ $(function(){
   }
   $("#pager li").eq(param - 1).addClass("current-pager");
 
+  // 詳細のスライダー
+  $('#js_detail_photo').bxSlider({
+    pagerCustom: '.detail-bxSlider-thumb'
+  });
 
+  // recommendのスライダー
+  $('#js_recommend_slider').bxSlider({
+    minSlides: 2,
+    maxSlides: 5,
+    slideWidth: 180,
+    slideMargin: 10,
+  });
+
+  // checked itemのスライダー
+  $('#bottom_slider').bxSlider({
+    minSlides: 3,
+    maxSlides: 9,
+    slideWidth: 96,
+    slideMargin: 10,
+  });
 
 });
