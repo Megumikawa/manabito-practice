@@ -17,12 +17,12 @@ $(function(){
 //
 //ページトップへのスクロール
   $(window).on("scroll", function(){
-      // console.log($(this).scrollTop());
-      if ($(this).scrollTop() >100){
-        $("#pagetop").fadeIn();
-      } else {
-        $("#pagetop").fadeOut();
-      }
+    // console.log($(this).scrollTop());
+    if ($(this).scrollTop() >100){
+      $("#pagetop").fadeIn();
+    } else {
+      $("#pagetop").fadeOut();
+    }
     });
     $("#pagetop").on("click", function(){
       $("html, body").animate({scrollTop: 0},1000);
@@ -45,8 +45,6 @@ $(function(){
       }
     });
 
-
-//
   let menuContents = $('#js_menu_contents');
 
   // if(menuContents.length > 0) {
