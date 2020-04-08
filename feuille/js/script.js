@@ -5,10 +5,6 @@ $(function(){
   const MENUSPEED = 300;
 
   $('#top_slider').bxSlider({
-    // maxSlides: 3,
-    // minSlides: 1,
-    // slideMargin: 1000,
-    // moveSlides: 1
   });
 
 //　カテゴリーアイコンの表示
@@ -116,6 +112,17 @@ $(function(){
     maxSlides: 9,
     slideWidth: 96,
     slideMargin: 10,
+  });
+
+// ハートの色の切り替え
+  $('.detail-favorite').on('click',function(){
+    if ($(this).hasClass('favorite-active') ===false) {
+      $(this).addClass('favorite-active');
+      $(this).find('img').eq(0).attr('src', 'images/icon-favorite-01.svg');
+    } else {
+      $(this).removeClass('favorite-active');
+      $(this).find('img').eq(0).attr('src', 'images/favorite-icon.svg');
+    }
   });
 
 });
