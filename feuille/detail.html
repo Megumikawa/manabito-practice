@@ -22,7 +22,7 @@
           <img class="btn-menu-close" src="images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">
           <img class="btn-menu-open" src="images/hamburger.svg" alt="ハンバーガーメニュー" width="20" height="14">
         </nav>
-        <h1 class="logo"><a href="index.html"><img src="images/logo.svg" alt="Feuille" width="72" height="38"></a></h1>
+        <span class="logo"><a href="index.html"><img src="images/logo.svg" alt="Feuille" width="72" height="38"></a></span>
         <nav class="pc-global-menu">
           <ul>
             <li><a href="#">NEW ITEM</a></li>
@@ -119,7 +119,7 @@
     <div class="detail-container">
       <ol class="breadcrumb">
         <li><a href="index.html">ショップ名</a></li>
-        <li><a href="category.html">ピアス</li>
+        <li><a href="category.html">ピアス</a></li>
         <li>スエードタッセルとゴールドパーツのピアス</li>
       </ol>
       <div class="detail-items-block">
@@ -137,71 +137,81 @@
         </div>
         <div class="detail-info">
           <section class="detail-info-top">
-            <p>ピアス</p>
-            <h3>スエードタッセルとゴールドパーツのピアス</h3>
-            <p class="detail-info-price">¥00,000（税込）</p>
+            <span>ピアス</span>
+            <h1 class="detail-h1">スエードタッセルとゴールドパーツのピアス</h1>
+            <div class="detail-info-price">¥00,000<p class="tax-included">（税込）</p></div>
           </section>
-          <ul class="detail-variety-wrapper">
-            <li class="detail-variety">
-              <img class="detail-variety-photo" src="images/detail-img-01.jpg" alt="マスタード色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+          <ul class="detail-moreinfo-wrapper">
+            <li class="detail-moreinfo">
+              <figure class="detail-moreinfo-photo">
+                <img src="images/detail-img-01.jpg" alt="マスタード色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+                <figcaption>マスタード</figcaption>
+              </figure>
               <p>size/free</p>
               <div class="btn-add-cart"><a href="#"><img src="images/cart-white.svg" alt="カートへ入れる" width="16" height="16">カートに入れる</a></div>
-              <div class="detail-favorite">
-                <img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20">
-              </div>
+              <div class="detail-favorite"><img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20"></div>
             </li>
-            <li class="detail-variety">
-              <img class="detail-variety-photo" src="images/detail-img-03.jpg" alt="グレー色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+            <li class="detail-moreinfo">
+              <figure class="detail-moreinfo-photo">
+              <img src="images/detail-img-03.jpg" alt="グレー色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+              <figcaption>グレー</figcaption>
+              </figure>
               <p>size/free</p>
               <div class="btn-add-cart2"><a>SOLD OUT</a></div>
-              <div class="detail-favorite">
-                <img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20">
-              </div>
+              <div class="detail-favorite"><img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20"></div>
             </li>
           </ul>
           <div class="sp-select-item"><a href="#"><img src="images/cart-white.svg" alt="カートへ入れる" width="16" height="16">カラー・サイズを選択する</a></div>
           <div class="detail-summary">
-            <p>小さなゴールドチャームとタッセルがゆらゆらと揺れるとてもかわいいピアスです。<br>
-              ポスト部分には金属アレルギーを引き起こしにくいサージカルステンレス製のパーツを使用しています。<br>
-              こちらはイヤリングパーツに変更可能です。カートへ入れる際に購入オプションより選択してください。
-            </p>
-            <h4>サイズ</h4>
-            <p>フープパーツ 約15mm<br>
-               タッセル 約50mm</br>
-               全長約80mm
-            </p>
+            <p>小さなゴールドチャームとタッセルがゆらゆらと揺れるとてもかわいいピアスです。</p>
+            <p>ポスト部分には金属アレルギーを引き起こしにくいサージカルステンレス製のパーツを使用しています。</p>
+            <p>こちらはイヤリングパーツに変更可能です。カートへ入れる際に購入オプションより選択してください。</p>
+          </div>
+          <div class="detail-summary-size">
+            <span>サイズ</span>
+            <dl>
+              <dt>フープパーツ</dt>
+              <dd>約15mm</dd>
+              <dt>タッセル</dt>
+              <dd>約50mm</dd>
+              <dt>全長</dt>
+              <dd>約80mm</dd>
+            </dl>
           </div>
         </div>
       </div>
       <section class="recommend-items-block">
-        <h2 class="title-block">RECOMMEND ITEMS</h2>
-        <p class="sub-title">オススメアイテム</p>
-        <ul id="js_recommend_slider" class="recommend-items">
-          <li>
-            <img src="images/new-item04.jpg" alt="クリアチェーンピアス" width="220" height="220">
-            <h3 class="product-name">クリアチェーンピアス</h3>
-            <p class="product-price">¥00,000</p>
-          </li>
-          <li>
-            <img src="images/new-item05.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
-            <h3 class="product-name">ドライフラワーレジンピアス</h3>
-            <p class="product-price">¥00,000</p>
-          </li>
-          <li>
-            <img src="images/new-item06.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
-            <h3 class="product-name">ドライフラワーレジンピアス</h3>
-            <p class="product-price">¥00,000</p>
-          </li>
-          <li>
-            <img src="images/new-item07.jpg" alt="ゴールドプレート×クリアフープの大ぶりピアス" width="220" height="220">
-            <h3 class="product-name">ゴールドプレート×クリアフープの大ぶりピアス</h3>
-            <p class="product-price">¥00,000</p>
-          </li>
-          <li>
-            <img src="images/new-item08.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
-            <h3 class="product-name">ドライフラワーレジンピアス</h3>
-            <p class="product-price">¥00,000</p>
-          </li>
+        <div class="recommend-items-block-innerwrap">
+          <h2 class="title-block">RECOMMEND ITEMS</h2>
+          <p class="sub-title">オススメアイテム</p>
+          <ul id="js_recommend_slider" class="recommend-items">
+            <li>
+              <img src="images/new-item04.jpg" alt="クリアチェーンピアス" width="220" height="220">
+              <h3 class="product-name">クリアチェーンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item05.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item06.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item07.jpg" alt="ゴールドプレート×クリアフープの大ぶりピアス" width="220" height="220">
+              <h3 class="product-name">ゴールドプレート×クリアフープの大ぶりピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item08.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="checked-items-block">
         <h2 class="title-block">CHECKED ITEMS</h2>

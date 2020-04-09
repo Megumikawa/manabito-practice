@@ -393,7 +393,8 @@ input[type=radio] {
   margin-bottom: 60px;
 }
 
-.category-main-top h2 {
+.category-h1 {
+  font-size: 20px;
   margin: 30px 0 20px;
 }
 
@@ -466,7 +467,7 @@ input[type=radio] {
 .detail-items-block {
   border-bottom: 1px solid #eee;
   display: flex;
-  padding-bottom: 84px;
+  padding-bottom: 80px;
   margin-bottom: 80px;
 }
 
@@ -480,13 +481,19 @@ input[type=radio] {
   width: 550px;
 }
 
+.detail-bxSlider-thumb {
+  display: flex;
+}
+
 .detail-bxSlider-thumb img {
   height: auto;
   width: 130px;
+  margin-right: 10px;
 }
 
 .detail-photo .bx-wrapper {
   border: none;
+  margin-bottom: 10px;
 }
 
 .detail-photo .bx-wrapper .bx-prev {
@@ -513,38 +520,56 @@ input[type=radio] {
   padding-bottom: 30px;
 }
 
-.detail-info-top h3 {
-  margin: 20px 0;
+.detail-info-top span {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.detail-h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .detail-info-price {
   font-size: 2.4rem;
-  font-weight: bold;
-  letter-spacing: 3px;
 }
 
-.detail-variety {
+.tax-included {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.detail-moreinfo {
   border-bottom: 1px solid #eee;
   display: flex;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
+.detail-moreinfo figcaption {
+  text-align: center;
+}
 
-.detail-variety-photo {
+.detail-moreinfo-photo {
+  margin: 0 30px 0 0;
+}
+
+.detail-moreinfo-photo img {
   height: auto;
-  margin-right: 30px;
   width: 80px;
 }
 
-.detail-variety p {
+.detail-moreinfo p {
   margin-right: 30px;
   padding-top: 12px;
+  font-size: 1.4rem;
 }
 
 .btn-add-cart img {
   color: #fff;
   height: auto;
-  margin: 0;
+  margin-right: 10px;
   width: 16px;
 }
 
@@ -552,7 +577,7 @@ input[type=radio] {
   display: block;
   background-color: #6d6155;
   color: #fff;
-  margin-right: 30px;
+  margin-right: 12px;
   padding: 12px 30px;
   white-space: nowrap;
 }
@@ -561,8 +586,8 @@ input[type=radio] {
   display: block;
   background-color: #a3a3a3;
   color: #fff;
-  margin-right: 30px;
-  padding: 13px 52px;
+  margin-right: 12px;
+  padding: 13px 54px;
   white-space: nowrap;
 }
 
@@ -570,25 +595,41 @@ input[type=radio] {
   margin-top: 10px;
 }
 
-.detail-summary p {
+.detail-summary {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.detail-summary-size {
+  margin-bottom: 10px;
   line-height: 1.6;
 }
 
-.detail-summary h4 {
-  margin: 24px 0 10px;
-}
-
-.detail-summary h4::before {
+.detail-summary-size span::before {
   content: '';
   background-color: #000;
   margin-right: 2px;
   padding: 0 5px;
 }
 
+.detail-summary-size dt {
+  float: left;
+}
+
+.detail-summary-size dd::after {
+  content: '';
+  clear: both;
+}
+
 .recommend-items-block {
   border-bottom: 1px solid #eee;
   margin-bottom: 80px;
   padding-bottom: 60px;
+}
+
+.checked-items-block {
+  margin-bottom: 80px;
 }
 
 .recommend-items li {
@@ -605,15 +646,12 @@ input[type=radio] {
   margin: 2% 0;
   text-align: center;
 }
-
+.favorite-normal {
+  cursor: pointer;
+}
 /* --▲ Detailページ ▲-- */
 
 /* --▼ top以外ののbxSlider矢印部分 ▼-- */
-.checked-items-block,
-.recommend-items-block {
-  margin-bottom: 140px;
-}
-
 .checked-items-block .bx-wrapper,
 .recommend-items-block .bx-wrapper {
   box-sizing: content-box;
@@ -1078,7 +1116,7 @@ input[type=radio] {
   .category-side,
   .detail-container .breadcrumb,
   .detail-bxSlider-thumb,
-  .detail-variety-wrapper {
+  .detail-moreinfo-wrapper {
     display: none;
   }
 
@@ -1381,6 +1419,8 @@ input[type=radio] {
   }
 
   .checked-items-block {
+    margin: 0 4%;
+    width: 92%;
     margin-bottom: 26%;
   }
 
@@ -1395,6 +1435,8 @@ input[type=radio] {
 
   .detail-items-block {
     display: block;
+    padding-bottom: 0;
+    margin-bottom: 14%;
   }
 
   .detail-photo {
@@ -1405,12 +1447,20 @@ input[type=radio] {
     height: auto;
   }
 
-  .detail-info {
-    margin: 0 2%;
-    width: 96%;
+  .detail-info,
+  .recommend-items-block-innerwrap {
+    margin: 0 4%;
+    width: 92%;
+    margin-bottom: 14%;
+  }
+
+  .recommend-items-block {
+    padding-bottom: 8%;
+    margin-bottom: 14%;
   }
 
   .detail-info-top {
+    padding-bottom: 0;
     border: none;
   }
 
@@ -1430,5 +1480,7 @@ input[type=radio] {
   .recommend-items .product-name {
     display: none;
   }
+
+
 
 }
